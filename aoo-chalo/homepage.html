@@ -1,0 +1,1798 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.jqueryui.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">   -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="./style.css?v1.2">
+    <link rel="stylesheet" href="./color.css?v1.3">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.12/dist/js/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lg-thumbnail/1.1.0/lg-thumbnail.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lg-fullscreen/1.1.0/lg-fullscreen.min.js"></script>
+    <title>Home Page</title>   
+</head>
+
+<body class="bg-light bg-img" style="background-image: url(/assets/bg22.png);">
+
+
+    <!-- MOBILE VIEW CODE -->
+    <section class="d-block d-lg-none">
+
+        <div id="mySidenav" class="sidenav bg-white pt-0" style="z-index: 5000;">
+            <div class="d-flex w-100 justify-content-between border-bottom align-items-center py-3 pl-4 pr-3">
+                <h5 class="py-0 my-0 font-weight-bold">Menu</h5>
+                <a href="javascript:void(0)" class="text-orange" onclick="closeNav()">&times;</a>
+            </div>
+            <!-- <a href="/why_aao_chalo.html" class="btn btn-block text-white text-left text-sm">Why Aao Chalo</a>
+            <a href="/destinations.html" class="btn btn-block text-white text-left text-sm">Destinations</a>
+            <a href="/trekking.html" class="btn btn-block text-white text-left text-sm">Trekking</a>
+            <a href="/expeditions.html" class="btn btn-block text-white text-left text-sm">Expeditions</a>
+            <a href="/tour_and_trips.html" class="btn btn-block text-white text-left text-sm">Tour & Trips</a>
+            <a href="/travellers.html" class="btn btn-block text-white text-left text-sm">Travellers</a> -->
+            <div class="accordion mt-4 position-relative" id="accordionExample" style="box-shadow: none">
+
+
+
+                <div class="card bg-transparent border-0" style="box-shadow: none;">
+                    <div class="card-header border-0 px-0 py-0 bg-transparent">
+                        <a href="/homepage.html" class="btn text-left pl-4 w-100 font-weight-bold text-sm" aria-expanded="true">Home</a>
+                    </div>
+                </div>  
+                
+                
+                <div class="card bg-transparent border-0" style="box-shadow: none;">
+                    <div class="card-header border-0 px-0 py-0 bg-transparent" id="headingTwo" >
+                        <a href="#" class="text-sm text-left pl-4 w-100" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            <span class="w-100 d-flex justify-content-between">
+                                  <span class="text-sm">Kahan Chalen</span>
+                                  <span class="mdi mdi-chevron-right"></span>
+                            </span>
+                        </a>
+                      </div>
+                    <div id="collapseTwo" class="collapse hide pt-0" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body text-sm font-weight-normal text-left">
+                            <a href="#" class="text-sm text-left w-100 d-flex justify-content-between" data-toggle="collapse" data-target="#collapseTwoOne" aria-expanded="true" aria-controls="collapseTwoOne"><span class="text-sm">Gilgit Baltistan</span><span class="mdi mdi-chevron-right"></span></a>
+                            <div id="collapseTwoOne" class="collapse hide" data-parent="#collapseTwo">
+                                <div class="card-body text-sm font-weight-normal text-left">
+                                    <a href="javascript:void(0)" class="text-sm font-weight-bold">Gilgit Division</a>
+                                    <div class="ml-4">
+                                        <a href="/gilgit.html" class="text-sm">Chipursan</a>
+                                        <a href="#" class="text-sm">Gupis</a>
+                                        <a href="#" class="text-sm">Gilgit</a>
+                                        <a href="/punjab.html" class="text-sm">Gulmit</a>
+                                        <a href="/punjab.html" class="text-sm">Hunza</a>    
+                                    </div>
+                                    <a href="javascript:void(0)" class="text-sm font-weight-bold">Baltistan Division</a>
+                                    <div class="ml-4">
+                                        <a href="/gilgit.html" class="text-sm">Kahplu</a>
+                                        <a href="#" class="text-sm">Skardu</a>
+                                        <a href="#" class="text-sm">Shigar</a>    
+                                    </div>
+                                    <a href="javascript:void(0)" class="text-sm font-weight-bold">Diamer Division</a>
+                                    <div class="ml-4">
+                                        <a href="/gilgit.html" class="text-sm">Astore</a>
+                                        <a href="#" class="text-sm">Deosai</a>    
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="text-sm text-left w-100 d-flex justify-content-between" data-toggle="collapse" data-target="#collapseTwoTwo" aria-expanded="true" aria-controls="collapseTwoTwo"><span class="text-sm">Azzad Jammu & Kashmir</span><span class="mdi mdi-chevron-right"></span></a>
+                            <div id="collapseTwoTwo" class="collapse hide"  data-parent="#collapseTwo">
+                                <div class="card-body text-sm font-weight-normal text-left">
+                                    <a href="/gilgit.html" class="text-sm">Bagh</a>
+                                    <a href="#" class="text-sm">Kel and Arrangkel</a>
+                                    <a href="#" class="text-sm">Muzaffarabad</a>
+                                    <a href="/punjab.html" class="text-sm">Neelum Valley</a>
+                                    <a href="/punjab.html" class="text-sm">New Mirpur</a>
+                                    <a href="/punjab.html" class="text-sm">Rawalkot</a>
+                                    <a href="/punjab.html" class="text-sm">Sharda</a>
+                                    <a href="/punjab.html" class="text-sm">Taobutt</a>
+                                </div>
+                            </div>
+
+                            <a href="#" class="text-sm text-left w-100 d-flex justify-content-between" data-toggle="collapse" data-target="#collapseTwoThree" aria-expanded="true" aria-controls="collapseTwoThree"><span class="text-sm">Khybar Pakhtunkhwan</span><span class="mdi mdi-chevron-right"></span></a>
+                            <div id="collapseTwoThree" class="collapse hide"  data-parent="#collapseTwo">
+                                <div class="card-body text-sm font-weight-normal text-left">
+                                    <a href="/gilgit.html" class="text-sm">Ayubia</a>
+                                    <a href="#" class="text-sm">Abottabad</a>
+                                    <a href="#" class="text-sm">Chitral</a>
+                                    <a href="/punjab.html" class="text-sm">Cherat</a>
+                                    <a href="/punjab.html" class="text-sm">Kalam</a>
+                                    <a href="/punjab.html" class="text-sm">Kumrat</a>
+                                    <a href="/punjab.html" class="text-sm">Khanpur</a>
+                                    <a href="/punjab.html" class="text-sm">Kalash</a>
+                                    <a href="/punjab.html" class="text-sm">Malam Jabba</a>
+                                    <a href="/punjab.html" class="text-sm">Miandem</a>
+                                    <a href="/punjab.html" class="text-sm">Mingora</a>
+                                    <a href="/punjab.html" class="text-sm">Mardan</a>
+                                    <a href="/punjab.html" class="text-sm">Naran</a>
+                                    <a href="/punjab.html" class="text-sm">Nathiyagali</a>
+                                    <a href="/punjab.html" class="text-sm">Shogran</a>
+                                    <a href="/punjab.html" class="text-sm">Thandiani</a>
+                                </div>
+                            </div>
+
+                            <a href="#" class="text-sm text-left w-100 d-flex justify-content-between" data-toggle="collapse" data-target="#collapseTwoFour" aria-expanded="true" aria-controls="collapseTwoFour"><span class="text-sm">Punjab</span><span class="mdi mdi-chevron-right"></span></a>
+                            <div id="collapseTwoFour" class="collapse hide"  data-parent="#collapseTwo">
+                                <div class="card-body text-sm font-weight-normal text-left">
+                                    <a href="/gilgit.html" class="text-sm">Bahwalpur</a>
+                                    <a href="#" class="text-sm">Fort Munro</a>
+                                    <a href="#" class="text-sm">Harrapa</a>
+                                    <a href="/punjab.html" class="text-sm">Islamabad</a>
+                                    <a href="/punjab.html" class="text-sm">Jhelum</a>
+                                    <a href="/punjab.html" class="text-sm">Kasur</a>
+                                    <a href="/punjab.html" class="text-sm">Lahore</a>
+                                    <a href="/punjab.html" class="text-sm">Multan</a>
+                                    <a href="/punjab.html" class="text-sm">Rawalpindi</a>
+                                    <a href="/punjab.html" class="text-sm">Salt Range</a>
+                                    <a href="/punjab.html" class="text-sm">Sheikhupura</a>
+                                    <a href="/punjab.html" class="text-sm">Soon Valley</a>
+                                    <a href="/punjab.html" class="text-sm">Taxila</a>
+                                </div>
+                            </div>
+
+                            <a href="#" class="text-sm text-left w-100 d-flex justify-content-between" data-toggle="collapse" data-target="#collapseTwoFive" aria-expanded="true" aria-controls="collapseTwoFive"><span class="text-sm">Sindh</span><span class="mdi mdi-chevron-right"></span></a>
+                            <div id="collapseTwoFive" class="collapse hide"  data-parent="#collapseTwo">
+                                <div class="card-body text-sm font-weight-normal text-left">
+                                    <a href="/gilgit.html" class="text-sm">Gorakh Hill Station</a>
+                                    <a href="#" class="text-sm">Karachi</a>
+                                    <a href="#" class="text-sm">Mohenjodaro</a>
+                                    <a href="/punjab.html" class="text-sm">Ranikot Fort</a>
+                                    <a href="/punjab.html" class="text-sm">Thatta</a>
+                                </div>
+                            </div>
+
+                            <a href="#" class="text-sm text-left w-100 d-flex justify-content-between" data-toggle="collapse" data-target="#collapseTwoSix" aria-expanded="true" aria-controls="collapseTwoSix"><span class="text-sm">Balochistan</span><span class="mdi mdi-chevron-right"></span></a>
+                            <div id="collapseTwoSix" class="collapse hide"  data-parent="#collapseTwo">
+                                <div class="card-body text-sm font-weight-normal text-left">
+                                    <a href="/gilgit.html" class="text-sm">Astola Island</a>
+                                    <a href="#" class="text-sm">Gwadar</a>
+                                    <a href="#" class="text-sm">Kund Malir</a>
+                                    <a href="/punjab.html" class="text-sm">Ormara</a>
+                                    <a href="/punjab.html" class="text-sm">Quetta</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <div class="card bg-transparent border-0" style="box-shadow: none;">
+                    <div class="card-header border-0 px-0 py-0 bg-transparent" id="headingTwo" >
+                        <a href="#" class="text-sm text-left pl-4 w-100" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            <span class="w-100 d-flex justify-content-between">
+                                  <span class="text-sm">Tour & Trips</span>
+                                  <span class="mdi mdi-chevron-right"></span>
+                            </span>
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="collapse hide pt-0" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body text-sm font-weight-normal text-left">
+
+                            <a href="#" class="text-sm text-left w-100">Valleys</a>
+                            <a href="#" class="text-sm text-left w-100 d-flex justify-content-between" data-toggle="collapse" data-target="#collapseThreeFive" aria-expanded="true" aria-controls="collapseThreeFive"><span class="text-sm">Seasons</span><span class="mdi mdi-chevron-right"></span></a>
+                            <div id="collapseThreeFive" class="collapse hide"  data-parent="#collapseThree">
+                                <div class="card-body text-sm font-weight-normal text-left">
+                                    <a href="/gilgit.html" class="text-sm"><span class="font-weight-bold">Bazm-e-Rang:</span> Spring</a>
+                                    <a href="#" class="text-sm"><span class="font-weight-bold">The Second Spring:</span> Autumn</a>
+                                    <a href="#" class="text-sm"><span class="font-weight-bold">The Blended Boughs:</span> Winter</a>
+                                </div>
+                            </div>
+                            <a href="#" class="text-sm text-left w-100">Festivals</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-transparent border-0" style="box-shadow: none;">
+                    <div class="card-header border-0 px-0 py-0 bg-transparent" id="headingThree" >
+                        <a href="#" class="text-sm text-left pl-4 w-100" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            <span class="w-100 d-flex justify-content-between">
+                                  <span class="text-sm">Treks</span>
+                                  <span class="mdi mdi-chevron-right"></span>
+                            </span>
+                        </a>
+                    </div>
+                    <div id="collapseFour" class="collapse hide pt-0" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body text-sm font-weight-normal text-left">
+                            <a href="#" class="text-sm text-left w-100">Light</a>
+                            <a href="#" class="text-sm text-left w-100">Moderate</a>
+                            <a href="#" class="text-sm text-left w-100">Strenuous</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-transparent border-0" style="box-shadow: none;">
+                    <div class="card-header border-0 px-0 py-0 bg-transparent" id="headingFour" >
+                        <a href="#" class="text-sm text-left pl-4 w-100" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            <span class="w-100 d-flex justify-content-between">
+                                  <span class="text-sm">Expeditions</span>
+                                  <span class="mdi mdi-chevron-right"></span>
+                            </span>
+                        </a>
+                    </div>
+                    <div id="collapseFive" class="collapse hide pt-0" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="card-body text-sm font-weight-normal text-left">
+                            <a href="#" class="text-sm text-left w-100">Below 6000m+</a>
+                            <a href="#" class="text-sm text-left w-100">6000m+</a>
+                            <a href="#" class="text-sm text-left w-100">7000m+</a>
+                            <a href="#" class="text-sm text-left w-100">8000m+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-transparent border-0" style="box-shadow: none;">
+                    <div class="card-header border-0 px-0 py-0 bg-transparent" id="headingFive" >
+                        <a href="#" class="text-sm text-left pl-4 w-100" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                            <span class="w-100 d-flex justify-content-between">
+                                  <span class="text-sm">Why Aao Chalo</span>
+                                  <span class="mdi mdi-chevron-right"></span>
+                            </span>
+                        </a>
+                    </div>
+                    <div id="collapseSix" class="collapse hide pt-0" aria-labelledby="headingFive" data-parent="#accordionExample">
+                        <div class="card-body text-sm font-weight-normal text-left">
+                            <a href="#" class="text-sm text-left w-100">Why Travel with us</a>
+                            <a href="#" class="text-sm text-left w-100">About Nasir & Farrah</a>
+                            <a href="#" class="text-sm text-left w-100">Testimonials</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-transparent border-0" style="box-shadow: none;">
+                    <div class="card-header border-0 px-0 py-0 bg-transparent">
+                        <a href="/travel_advisory_whethercondition.html" class="btn text-left pl-4 w-100 font-weight-bold text-sm" aria-expanded="true">Travel Advisory</a>
+                    </div>
+                </div>  
+                <div class="card bg-transparent border-0" style="box-shadow: none;">
+                    <div class="card-header border-0 px-0 py-0 bg-transparent">
+                        <a href="/broucher.html" class="btn text-left pl-4 w-100 font-weight-bold text-sm" aria-expanded="true">Brouchers</a>
+                    </div>
+                </div>  
+                <div class="card bg-transparent border-0" style="box-shadow: none;">
+                    <div class="card-header border-0 px-0 py-0 bg-transparent">
+                        <a href="/vlogs.html" class="btn text-left pl-4 w-100 font-weight-bold text-sm" aria-expanded="true">Safar Namay</a>
+                    </div>
+                </div>  
+                <div class="card bg-transparent border-0" style="bottom: 0px; box-shadow: none;">
+                    <div class="card-header border-0 px-0 py-0 bg-transparent text-right py-4 px-4">
+                        <p class="pr-2 small border-top pt-4 font-weight-bold">Social Links</p>
+                        <a href="/vlogs.html" class="d-inline-block text-left p-2 font-weight-bold text-sm" aria-expanded="true">
+                            <img src="/assets/facebook-icon.png" width="30px" alt="">
+                        </a>
+                        <a href="/vlogs.html" class="d-inline-block text-left p-2 font-weight-bold text-sm" aria-expanded="true">
+                            <img src="/assets/insta-icon.png" width="30px" alt="">
+                        </a>
+                        <a href="/vlogs.html" class="d-inline-block text-left p-2 font-weight-bold text-sm" aria-expanded="true">
+                            <img src="/assets/twitter-icon.png" width="30px" alt="">
+                        </a>
+                        <a href="/vlogs.html" class="d-inline-block text-left p-2 font-weight-bold text-sm" aria-expanded="true">
+                            <img src="/assets/youtube-icon.png" width="30px" alt="">
+                        </a>
+                    </div>
+                </div>  
+            </div> 
+                
+
+            </div>  
+            
+        </div>     
+               
+        <header class="d-flex justify-content-between between py-2 px-2 bg-dark-blue align-items-center position-relative">
+            <a href="javascript:void(0)" onclick="openNav()" class="btn mdi mdi-menu text-white"></a>
+            <a href="/homepage.html"><img src="/assets/aaochalo_header_logo.png" width="60px" alt=""></a>
+            <div>
+                <a href="#" onclick="showSmSearchField()" class="mdi mdi-magnify mx-2 text-white"></a>
+                <!-- <a href="#" class="mdi mdi-download mx-2 text-white"></a> -->
+                <form action="/faq.html" id="search-field-sm" class="position-absolute mb-0 bg-dark-blue h-100 d-none w-100" style="top: 0px; left: 0px;">
+                    <div class="input-group">
+                        <div class="input-group-prepend mr-3">
+                            <span onclick="hideSmSearchField()" class="input-group-text bg-transparent border-0 text-white mdi mdi-chevron-left text-white"></span>
+                        </div>
+                        <input type="text" class="form-control px-0 border-radius-0 border-0 text-white" placeholder="What are you looking for..." >
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent border-0 text-white mdi mdi-magnify text-white"></span>
+                        </div>
+                    </div>
+                </form>                     
+            </div>
+        </header>
+
+    </section>
+    <!-- MOBILE VIEW CODE -->
+    <!-- HEADER -->    
+
+    <!-- HEADER -->
+    <header aria-label="top-header" class="container-fluid text-white bg-dark-blue py-4 shadow d-lg-block d-none my-0">
+        <div class="container">
+            <div class="row mx-0 justify-content-between align-items-center">
+                <div arial-label="left">
+                    <span class="text-sm mr-2 font-weight-bold">
+                        <img src="./assets/call_icon.png" class="mr-1" width="22px" alt="">
+                        +91 332 543 4567
+                    </span>
+                    <span class="text-sm mx-2 d-none d-md-inline-block ">
+                        <a href="/travel_advisory_whethercondition.html" class="text-white font-weight-bold">Travel Advisory</a>
+                    </span>
+                    <span class="text-sm mx-2 d-none d-md-inline-block ">
+                        <a href="/broucher.html" class="text-white font-weight-bold">Brouchers</a>
+                    </span>
+                </div>
+                <div arial-label="right">
+                    <span class="text-sm mr-2 d-none d-md-inline-block ">
+                        <a href="/vlogs.html" class="text-white font-weight-bold">Safar Namay</a>
+                    </span>
+                    <form class="d-inline-block ml-4 mb-0">
+                        <div class="input-group border-bottom">
+                            <input type="text" class="form-control font-weight-bold px-0 text-white border-radius-0 border-0 py-0" value="Search" style="max-width: 50px;">
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-transparent border-0 text-white pr-0 mr-0">
+                                    <img src="./assets/search_icon.png" width="14px" alt="">
+                                </span>
+                            </div>
+                        </div>
+                    </form>                    
+                    <a href="/contactus.html" class="btn bg-orange d-none d-md-inline-block text-white px-4 rounded-pill ml-3 font-weight-bold">Contact us</a>
+                </div>            
+            </div>    
+        </div>
+    </header>
+    <!-- HEADER -->
+
+
+
+    <!-- HERO -->
+    <nav class="container position-relative" style="z-index: 50000;">
+        <div class="row mx-0 justify-content-between align-items-center d-lg-flex d-none py-4">
+            <div aria-label="left" class="position-relative">
+                <a href="/homepage.html">
+                    <img src="/assets/aaochalo_header_logo.png" class="mr-1" alt="" width="120px">
+                </a>
+            </div>
+            <div arial-label="right" class="d-none d-md-flex">
+                <div>
+                    <a class="nav-link btn text-white font-weight-bold hover-orange" href="#">Home</a>
+                </div>
+                <div>
+                    <a data-label="kahan-chalen" class="nav-link btn text-white font-weight-bold hover-orange custom--dropdown" href="#">Kahan Chalen</a>
+                    <section data-label="kahan-chalen" class="bg-white position-absolute d-none mx-0 py-4 px-4 shadow flex-nowrap animate__animated animate__fadeIn" style="transition: 0.3s;">
+                        <div>
+                            <a href="#" data-label="gilgit-baltistan" class="btn btn-block text-aqua text-left d-flex justify-content-between font-weight-bold aqua-hover">Gligit Baltistan <span class="mdi mdi-chevron-right pl-4"></span></a>
+                            <a href="#jammu" data-label="jammu" class="btn btn-block text-left d-flex justify-content-between font-weight-bold aqua-hover">Azzad Jammu & Kashmir <span class="mdi mdi-chevron-right pl-4"></span></a>
+                            <a href="#kpk" data-label="kpk" class="btn btn-block text-left d-flex justify-content-between font-weight-bold aqua-hover">Khybar Pakhtunkhwan <span class="mdi mdi-chevron-right pl-4"></span></a>
+                            <a href="#punjab" data-label="punjab" class="btn btn-block text-left d-flex justify-content-between font-weight-bold aqua-hover">Punjab <span class="mdi mdi-chevron-right pl-4"></span></a>
+                            <a href="#sindh" data-label="sindh" class="btn btn-block text-left d-flex justify-content-between font-weight-bold aqua-hover">Sindh <span class="mdi mdi-chevron-right pl-4"></span></a>
+                            <a href="#balochistan" data-label="balochistan" class="btn btn-block text-left d-flex justify-content-between font-weight-bold aqua-hover">Balochistan <span class="mdi mdi-chevron-right pl-4"></span></a>
+                        </div>
+                        <article class="d-flex" data-label="gilgit-baltistan">
+                            <div class="border-right">
+                                <a href="#" class="btn btn-block text-left font-weight-bold text-dark">Gligit Division</a>
+                                <div class="d-flex mt-2 px-2">
+                                    <div>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Chipursan</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Gupis</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Gilgit</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Gulmit</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Hunza</a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Khunjrab</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Misgar</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Nagar</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Naltar</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Passu</a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Phandeer</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Shimshal</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Sost</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Shandoor</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-right">
+                                <a href="#" class="btn btn-block text-left font-weight-bold text-dark">Baltistan Division</a>
+                                <div class="d-flex mt-2 px-2 h-100">
+                                    <div>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Kahplu</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Skardu</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Shigar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-block text-left font-weight-bold text-dark">Diamer Division</a>
+                                <div class="d-flex mt-2">
+                                    <div>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Astore</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Deosai</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="d-none" data-label="jammu">
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Bagh</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Kel and Arrangkel</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Muzaffarabad</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Neelum Valley</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">New Mirpur</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Rawalkot</a>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Sharda</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Taobutt</a>
+                            </div>
+                        </article>
+                        <article class="d-none" data-label="punjab">
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Bahwalpur</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Fort Munro</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Harrapa (Sub)</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Islamabad</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Jhelum (Sub)</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Kasur (Sub)</a>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Lahore</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Multan</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Rawalpindi (Sub)</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Salt Range</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Sheikhupura (Sub)</a>                                
+                                <a href="#" class="btn btn-block text-left aqua-hover">Soon Valley</a>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Taxila (Sub)</a>
+                            </div>
+
+                        </article>
+                        <article class="d-none" data-label="kpk">
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Ayubia</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Abottabad</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Chitral</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Cherat</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Kalam</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Kumrat</a>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Khanpur</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Kalash</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Malam Jabba</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Miandem</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Mingora</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Mardan</a>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Naran</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Nathiyagali</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Shogran</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Thandiani</a>
+                            </div>
+                        </article>
+                        <article class="d-none" data-label="sindh">
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Gorakh Hill Station</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Karachi</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Mohenjodaro (Sub)</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Ranikot Fort</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Thatta (Sub)</a>
+                            </div>
+                        </article>
+                        <article class="d-none" data-label="balochistan">
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Astola Island</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Gwadar</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Kund Malir</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Ormara</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Quetta</a>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+                <div>
+                    <a data-label="kahan-chalen" class="nav-link btn text-white font-weight-bold hover-orange custom--dropdown" href="#">Tour & Trips</a>
+                    <section data-label="kahan-chalen" class="bg-white position-absolute d-none mx-0 py-4 px-4 shadow flex-nowrap animate__animated animate__fadeIn" style="transition: 0.3s;">
+                        <div>
+                            <a href="#" class="btn btn-block text-left d-flex justify-content-between aqua-hover">Valleys</a>
+                            <a href="#" data-label="seasons" class="btn text-aqua btn-block text-left d-flex justify-content-between font-weight-bold aqua-hover">Seasons <span class="mdi mdi-chevron-right pl-4"></span></a>
+                            <a href="#" class="btn btn-block text-left d-flex justify-content-between aqua-hover">Festivals </a>
+                        </div>
+                        <article class="d-flex" data-label="seasons">
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover"><span class="font-weight-bold">Bazm-e-Rang:</span> Spring</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover"><span class="font-weight-bold">The Second Sprint:</span> Autumn</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover"><span class="font-weight-bold">The Blended Boughs:</span> Winter</a>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+                <div>
+                    <a class="nav-link btn text-white font-weight-bold hover-orange custom--dropdown" href="#">Treks</a>
+                    <section data-label="treks" class="bg-white position-absolute d-none mx-0 py-4 px-4 shadow flex-nowrap animate__animated animate__fadeIn" style="transition: 0.3s;">
+                        <div>
+                            <a href="#" class="btn btn-block text-left d-flex justify-content-between aqua-hover">Light</a>
+                            <a href="#" class="btn btn-block text-left d-flex justify-content-between aqua-hover">Moderate</a>
+                            <a href="#"  class="btn btn-block text-left d-flex justify-content-between aqua-hover">Strenuous</a>
+                        </div>
+                    </section>                    
+                </div>
+                <div>
+                    <a class="nav-link btn text-white font-weight-bold hover-orange custom--dropdown" href="#">Expeditions</a>
+                    <section data-label="expeditions" class="bg-white position-absolute d-none mx-0 py-4 px-4 shadow flex-nowrap animate__animated animate__fadeIn" style="transition: 0.3s;">
+                        <div>
+                            <a href="#" class="btn btn-block text-left d-flex justify-content-between aqua-hover">Below 6000m+</a>
+                            <a href="#" class="btn btn-block text-left d-flex justify-content-between aqua-hover">6000m+</a>
+                            <a href="#"  class="btn btn-block text-left d-flex justify-content-between aqua-hover">7000m+</a>
+                            <a href="#"  class="btn btn-block text-left d-flex justify-content-between aqua-hover">8000m+</a>
+                        </div>
+                    </section>                    
+                </div>
+                <div>
+                    <a class="nav-link btn text-white font-weight-bold hover-orange custom--dropdown" href="#">Why Aao Chalo</a>
+                    <section data-label="why-aaochalo" class="bg-white position-absolute d-none mx-0 py-4 px-4 shadow flex-nowrap animate__animated animate__fadeIn" style="transition: 0.3s;">
+                        <div>
+                            <a href="#" class="btn btn-block text-left d-flex justify-content-between aqua-hover">Why Travel With Us</a>
+                            <a href="#" class="btn btn-block text-left d-flex justify-content-between aqua-hover">About Nasir & Farrah</a>
+                            <a href="#"  class="btn btn-block text-left d-flex justify-content-between aqua-hover">Testimonials</a>
+                        </div>
+                    </section>                    
+                </div>
+            </div>            
+        </div>    
+    
+    </nav>
+    <!-- HERO -->
+    <!-- Slider -->
+    <section data-aos="fade-in" class="slider-section translatey-md--110px">
+        
+        <div id="carousel2" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators d-none" style="left: auto; right: 10%; bottom: 12%;">
+                <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel2" data-slide-to="1"></li>
+                <li data-target="#carousel2" data-slide-to="2"></li>
+                <li data-target="#carousel2" data-slide-to="3"></li>
+            </ol> <!-- End of Indicators -->
+
+            <!-- Carousel Content -->
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" style="height: auto;">
+                    <div class="bg-img px-0 pt-md-5" style="background-image: url('/assets/home-slider-1.jpg');">
+                        <div class="container pt-md-5">
+                            <div class="w-100 py-5 my-0 mx-auto text-center text-lg-left" style="max-width: 600px;">
+                                <p class="mb-0 text-orange segeo-print-font">Welcome To Aao Chalo</p>
+                                <h1 class="font-weight-bold archivo-font text-white mb-1">Discover Your <br> Favorite Places With Us</h1>
+                                <div class="w-100"><a href="/blogpage.html" class="btn border text-white px-5 mt-4 mb-5">Read More</a></div>
+                            </div>
+                        </div>
+                    </div>                
+                </div> <!-- End of Carousel Item -->
+
+                <div class="carousel-item" style="height: auto;">
+                    <div class="bg-img px-0 pt-md-5" style="background-image: url('/assets/homeslider_banner_2.jpg');">
+                        <div class="container pt-md-5">
+                            <div class="w-100 py-5 my-0 mx-auto text-center text-lg-left" style="max-width: 600px;">
+                                <p class="mb-0 text-orange segeo-print-font">Welcome To Aao Chalo</p>
+                                <h1 class="font-weight-bold archivo-font text-white mb-1">Discover Your <br> Favorite Places With Us</h1>
+                                <div class="w-100"><a href="/blogpage.html" class="btn border text-white px-5 mt-4 mb-5">Read More</a></div>
+                            </div>
+        
+                        </div>
+                    </div>                
+                </div> <!-- End of Carousel Item -->
+
+                <div class="carousel-item" style="height: auto;">
+                    <div class="bg-img px-0 pt-md-5" style="background-image: url('/assets/home-slider-3.jpg');">
+                        <div class="container pt-md-5">
+                            <div class="w-100 py-5 my-0 mx-auto text-center text-lg-left" style="max-width: 600px;">
+                                <p class="mb-0 text-orange segeo-print-font">Welcome To Aao Chalo</p>
+                                <h1 class="font-weight-bold archivo-font text-white mb-1">Discover Your <br> Favorite Places With Us</h1>
+                                <div class="w-100"><a href="/blogpage.html" class="btn border text-white px-5 mt-4 mb-5">Read More</a></div>
+                            </div>
+        
+                        </div>
+                    </div>                
+                </div> <!-- End of Carousel Item -->
+
+                <div class="carousel-item" style="height: auto;">
+                    <div class="bg-img px-0 pt-md-5" style="background-image: url('/assets/home-slider-4.jpg');">
+                        <div class="container pt-md-5">
+                            <div class="w-100 py-5 my-0 mx-auto text-center text-lg-left" style="max-width: 600px;">
+                                <p class="mb-0 text-orange segeo-print-font">Welcome To Aao Chalo</p>
+                                <h1 class="font-weight-bold archivo-font text-white mb-1">Discover Your <br> Favorite Places With Us</h1>
+                                <div class="w-100"><a href="/blogpage.html" class="btn border text-white px-5 mt-4 mb-5">Read More</a></div>
+                            </div>
+        
+                        </div>
+                    </div>                
+                </div> <!-- End of Carousel Item -->
+            </div> <!-- End of Carousel Content -->
+
+            <!-- Previous & Next -->
+            <a href="#carousel2" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+            <a href="#carousel2" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+        </div> <!-- End of Carousel -->
+    </section> <!-- End of Slider -->
+
+
+
+    <section class="container mt-4 mt-md-0 translatey-md--155px position-relative" style="z-index: 1000;">
+        <div class="row mx-0 bg-white shadow justify-content-around flex-md-nowrap flex-wrap align-items-center px-4 py-3" style="border-radius: 5px;">
+            <section class="w-sm-100 mb-4 mb-md-0">
+                <div>
+                    <a data-label="kahan-chalen-2" href="#" class="btn px-0 py-0 hover-orange custom--dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="text-aqua font-weight-bold">Kahah Chalen</span>
+                        <span class="mdi mdi-chevron-down text-orange"></span>
+                    </a>                                       
+                    <div class="input-group">
+                        <input type="text" class="form-control text-light-grey font-weight-bold px-0 text-sm border-radius-0 border-0 py-0" placeholder="Search your Activity">
+                    </div>               
+                    <section data-label="kahan-chalen-2" class="bg-white position-absolute d-none mx-0 py-4 px-4 shadow flex-nowrap animate__animated animate__fadeIn" style="transition: 0.3s; z-index: 100000">
+                        <div>
+                            <a href="#gilgit-baltistan" data-label="gilgit-baltistan" class="btn btn-block text-aqua text-left d-flex justify-content-between font-weight-bold aqua-hover">Gligit Baltistan <span class="mdi mdi-chevron-right pl-4"></span></a>
+                            <a href="#jammu" data-label="jammu" class="btn btn-block text-left d-flex justify-content-between font-weight-bold aqua-hover">Azzad Jammu & Kashmir <span class="mdi mdi-chevron-right pl-4"></span></a>
+                            <a href="#kpk" data-label="kpk" class="btn btn-block text-left d-flex justify-content-between font-weight-bold aqua-hover">Khybar Pakhtunkhwan <span class="mdi mdi-chevron-right pl-4"></span></a>
+                            <a href="#punjab" data-label="punjab" class="btn btn-block text-left d-flex justify-content-between font-weight-bold aqua-hover">Punjab <span class="mdi mdi-chevron-right pl-4"></span></a>
+                            <a href="#sindh" data-label="sindh" class="btn btn-block text-left d-flex justify-content-between font-weight-bold aqua-hover">Sindh <span class="mdi mdi-chevron-right pl-4"></span></a>
+                            <a href="#balochistan" data-label="balochistan" class="btn btn-block text-left d-flex justify-content-between font-weight-bold aqua-hover">Balochistan <span class="mdi mdi-chevron-right pl-4"></span></a>
+                        </div>
+                        <article class="d-flex" data-label="gilgit-baltistan">
+                            <div class="border-right">
+                                <a href="#" class="btn btn-block text-left font-weight-bold text-dark">Gligit Division</a>
+                                <div class="d-flex mt-2 px-2">
+                                    <div>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Chipursan</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Gupis</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Gilgit</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Gulmit</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Hunza</a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Khunjrab</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Misgar</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Nagar</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Naltar</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Passu</a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Phandeer</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Shimshal</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Sost</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Shandoor</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-right">
+                                <a href="#" class="btn btn-block text-left font-weight-bold text-dark">Baltistan Division</a>
+                                <div class="d-flex mt-2 px-2 h-100">
+                                    <div>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Kahplu</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Skardu</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Shigar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-block text-left font-weight-bold text-dark">Diamer Division</a>
+                                <div class="d-flex mt-2">
+                                    <div>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Astore</a>
+                                        <a href="#" class="btn btn-block text-left aqua-hover">Deosai</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="d-none" data-label="jammu">
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Bagh</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Kel and Arrangkel</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Muzaffarabad</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Neelum Valley</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">New Mirpur</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Rawalkot</a>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Sharda</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Taobutt</a>
+                            </div>
+                        </article>
+                        <article class="d-none" data-label="punjab">
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Bahwalpur</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Fort Munro</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Harrapa (Sub)</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Islamabad</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Jhelum (Sub)</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Kasur (Sub)</a>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Lahore</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Multan</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Rawalpindi (Sub)</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Salt Range</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Sheikhupura (Sub)</a>                                
+                                <a href="#" class="btn btn-block text-left aqua-hover">Soon Valley</a>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Taxila (Sub)</a>
+                            </div>
+
+                        </article>
+                        <article class="d-none" data-label="kpk">
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Ayubia</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Abottabad</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Chitral</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Cherat</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Kalam</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Kumrat</a>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Khanpur</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Kalash</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Malam Jabba</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Miandem</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Mingora</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Mardan</a>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Naran</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Nathiyagali</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Shogran</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Thandiani</a>
+                            </div>
+                        </article>
+                        <article class="d-none" data-label="sindh">
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Gorakh Hill Station</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Karachi</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Mohenjodaro (Sub)</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Ranikot Fort</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Thatta (Sub)</a>
+                            </div>
+                        </article>
+                        <article class="d-none" data-label="balochistan">
+                            <div>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Astola Island</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Gwadar</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Kund Malir</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Ormara</a>
+                                <a href="#" class="btn btn-block text-left aqua-hover">Quetta</a>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </section>
+            <section class="border-md-left pl-md-3 pl-0 mb-4 mb-md-0 w-sm-100">
+                <div class="dropdown">
+                    <button class="btn px-0 py-0 hover-orange" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="text-aqua font-weight-bold">Activity</span>
+                        <span class="mdi mdi-chevron-down text-orange"></span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>                
+                <div class="input-group">
+                    <input type="text" class="form-control text-light-grey font-weight-bold px-0 text-sm border-radius-0 border-0 py-0" placeholder="Search your Activity">
+                </div>
+            </section>
+            <section class="border-md-left pl-md-3 pl-0 mb-4 mb-md-0 w-sm-50">
+                <div class="dropdown">
+                    <button class="btn px-0 py-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="text-aqua font-weight-bold">Season</span>
+                        <span class="mdi mdi-chevron-down text-orange"></span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>                
+                <div class="input-group">
+                    <input type="text" class="form-control text-light-grey font-weight-bold px-0 text-sm border-radius-0 border-0 py-0" placeholder="Winter">
+                </div>
+            </section>
+            <section class="border-md-left pl-md-3 pl-0 mb-4 mb-md-0 w-sm-50">
+                <div class="dropdown">
+                    <button class="btn px-0 py-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="text-aqua font-weight-bold">Tourist Type</span>
+                        <span class="mdi mdi-chevron-down text-orange"></span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>                
+                <div class="input-group">
+                    <input type="text" class="form-control text-light-grey font-weight-bold px-0 text-sm border-radius-0 border-0 py-0" placeholder="Female">
+                </div>
+            </section>
+            <section class=" mb-4 mb-md-0 w-sm-100">
+                <a href="" class="btn bg-orange btn-block text-white px-5 font-weight-bold">Search</a>                
+            </section>
+        </div>
+    </section>
+
+
+    <section class="container pt-5 px-0 translatey-md--110px">
+        <!-- OUR SPECIAL OFFERS TITLE -->
+        <section class="text-left px-0" aria-label="section-title">
+            <div class="row mx-0 px-0 align-items-center">
+                <div class="col-md-5 px-0">
+                    <section class="container text-center mb-4" aria-label="what-you-can-do-with-us-title">
+                        <h4 class="font-weight-bold text-aqua">DISCOVER PLACES</h4>
+                        <img src="./assets/namelines.png" width="160px" alt="">
+                    </section>                    
+                    <img src="./assets/dicoverplaces_image.png" class="w-100" alt="">            
+                </div>                
+                <div class="col-md-7 text-center px-3 px-md-4 mt-0">
+                    <p class="text-sm font-weight-normal text-light-grey" style="line-height: 200%; text-align: justify;">
+                        From remote valleys and wild mountains, down to the Arabian Sea, AaoChalo offers a variety of destinations in Pakistan for anyone and everyone to explore and discover. Choose from our innovative itineraries that are based upon enriching experiences rooted in Pakistani culture or tailor your own dreams and let AaoChalo do the rest and make your life hassle free. You will unfold many stories along the way, but most importantly with AaoChalo you will make unforgettable memories: in the warmth of the food you eat, in the reflections of the lakes, in the raw pastures and dark forests, in the peaks and most importantly, in the hearts and homes of the Pakistanis you will meet.                    </p>    
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+    <section class="container-fluid position-relative px-0 mx-0 bg-img parallax mt-md-5" style="background-image: url(/assets/trips_and_tours_bg.png); z-index: 1000;">
+        <div class="container px-0 my-5 py-5">
+            <div class="row mx-auto justify-content-center">
+                <div class="col-md-12">
+                    <section class="container px-0 text-center mb-2 mb-md-4 mt-5">
+                        <div class="row mx-0 justify-content-center align-items-center">
+                            <section class="container text-center mb-4" aria-label="what-you-can-do-with-us-title">
+                                <h4 class="font-weight-bold text-white">TOUR AND TRIPS</h4>
+                                <img src="./assets/namelines.png" width="160px" alt="">
+                            </section>                                
+                        </div>
+                    </section>      
+                    <section class="px-0">
+                        <div class="row mx-0 px-4 py-2 flex-nowrap flex-md-wrap" style="overflow: auto;">    
+                            <div class="col-md-4 px-md-4 my-4 flex-shrink-0">               
+                                <section class="bg-white shadow position-relative" style="border-radius: 10px;">
+                                    <div class="text-center">
+                                        <div class="position-relative">
+                                            <img class="block border-radius-10 mb-4" src="https://aoo-chalo.s3.us-east-2.amazonaws.com/1626691632010maginhut_cherat.png" width="100%" alt="">       
+                                            <img src="/assets/tripcard_whiteshape2.png" class="w-100 " style="margin-top: -45%;" alt="">
+                                        </div>
+                                        <div class="row mx-0 px-3 justify-content-around align-items-center">
+                                            <h6 class="col-12 text-left px-1 font-weight-bold text-orange text-md">Land of flower and water: Islamabad to Shandoor</h6>
+                                            <div class="col-6 px-0 my-3">
+                                                <div class="d-flex w-100 align-items-center">
+                                                    <i class="mdi mdi-script text-aqua"></i>
+                                                    <p class="ml-1 my-0">
+                                                        <span class="font-weight-bold text-sm">Duration</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 px-0">
+                                                <span class="text-light-grey tiny-text">4 Days/3 Nights</span>
+                                            </div> 
+                                            <div class="col-12 text-right py-4">
+                                                <a href="" class="btn bg-orange text-sm py-1 text-white px-4 font-weight-bold">View Details</a>                    
+                                            </div>
+                                        </div>    
+                    
+                                    </div>                
+                                </section>
+                            </div>   
+                            <div class="col-md-4 px-md-4 my-4 flex-shrink-0">               
+                                <section class="bg-white shadow position-relative" style="border-radius: 10px;">
+                                    <div class="text-center">
+                                        <img class="block mb-4" src="./assets/trips_tour_Card2.png" width="100%" alt="">       
+                                        <section class="py-4 position-absolute w-100 text-center"  style="top: 0px; left: 0px;">
+                                            <h5 class="text-sm mb-0 font-weight-bold text-white">6 Day trip to Kohistan</h5>
+                                            <div class="w-25 border-bottom mx-auto py-1 border-2"></div>
+                                        </section>                
+                                        <div class="row border-top mx-3 justify-content-around py-2">
+                                            <div class="col-6 px-0">
+                                                <div class="d-flex w-100">
+                                                    <i class="mdi mdi-account-group text-aqua"></i>
+                                                    <p class="ml-1">
+                                                        <span class="font-weight-bold text-sm">Group size</span><br>
+                                                        <span class="text-light-grey tiny-text">7 Days/ 6 Nights</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 px-0">
+                                                <div class="d-flex w-100">
+                                                    <i class="mdi mdi-script text-aqua"></i>
+                                                    <p class="ml-1">
+                                                        <span class="font-weight-bold text-sm">Duration</span><br>
+                                                        <span class="text-light-grey tiny-text">4 Days</span>
+                                                    </p>
+                                                </div>
+                                            </div> 
+                                            <div class="col-12 d-flex mx-0 align-items-center border-top pt-2 mb-2 px-0 justify-content-around">
+                                                <strong class="font-weight-bold text-sm my-0 py-0 flex-shrink-0">6,000 Rs</strong>
+                                                <a href="" class="btn bg-orange text-sm py-1 text-white px-4 font-weight-bold">Search</a>                    
+                                            </div>
+                                        </div>    
+                    
+                                    </div>                
+                                </section>
+                            </div>    
+                            <div class="col-md-4 px-md-4 my-4 flex-shrink-0">               
+                                <section class="bg-white shadow position-relative" style="border-radius: 10px;">
+                                    <div class="text-center">
+                                        <img class="block mb-4" src="./assets/trips_tour_Card3.png" width="100%" alt="">       
+                                        <section class="py-4 position-absolute w-100 text-center"  style="top: 0px; left: 0px;">
+                                            <h5 class="text-sm mb-0 font-weight-bold text-white">6 Day trip to Kohistan</h5>
+                                            <div class="w-25 border-bottom mx-auto py-1 border-2"></div>
+                                        </section>                
+                                        <div class="row border-top mx-3 justify-content-around py-2">
+                                            <div class="col-6 px-0">
+                                                <div class="d-flex w-100">
+                                                    <i class="mdi mdi-account-group text-aqua"></i>
+                                                    <p class="ml-1">
+                                                        <span class="font-weight-bold text-sm">Group size</span><br>
+                                                        <span class="text-light-grey tiny-text">7 Days/ 6 Nights</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 px-0">
+                                                <div class="d-flex w-100">
+                                                    <i class="mdi mdi-script text-aqua"></i>
+                                                    <p class="ml-1">
+                                                        <span class="font-weight-bold text-sm">Duration</span><br>
+                                                        <span class="text-light-grey tiny-text">4 Days</span>
+                                                    </p>
+                                                </div>
+                                            </div> 
+                                            <div class="col-12 d-flex mx-0 align-items-center border-top pt-2 mb-2 px-0 justify-content-around">
+                                                <strong class="font-weight-bold text-sm my-0 py-0 flex-shrink-0">6,000 Rs</strong>
+                                                <a href="" class="btn bg-orange text-sm py-1 text-white px-4 font-weight-bold">Search</a>                    
+                                            </div>
+                                        </div>    
+                    
+                                    </div>                
+                                </section>
+                            </div>    
+                            <div class="col-md-4 px-md-4 my-4 flex-shrink-0">               
+                                <section class="bg-white shadow position-relative" style="border-radius: 10px;">
+                                    <div class="text-center">
+                                        <img class="block mb-4" src="./assets/trips_tour_Card4.png" width="100%" alt="">       
+                                        <section class="py-4 position-absolute w-100 text-center"  style="top: 0px; left: 0px;">
+                                            <h5 class="text-sm mb-0 font-weight-bold text-white">6 Day trip to Kohistan</h5>
+                                            <div class="w-25 border-bottom mx-auto py-1 border-2"></div>
+                                        </section>                
+                                        <div class="row border-top mx-3 justify-content-around py-2">
+                                            <div class="col-6 px-0">
+                                                <div class="d-flex w-100">
+                                                    <i class="mdi mdi-account-group text-aqua"></i>
+                                                    <p class="ml-1">
+                                                        <span class="font-weight-bold text-sm">Group size</span><br>
+                                                        <span class="text-light-grey tiny-text">7 Days/ 6 Nights</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 px-0">
+                                                <div class="d-flex w-100">
+                                                    <i class="mdi mdi-script text-aqua"></i>
+                                                    <p class="ml-1">
+                                                        <span class="font-weight-bold text-sm">Duration</span><br>
+                                                        <span class="text-light-grey tiny-text">4 Days</span>
+                                                    </p>
+                                                </div>
+                                            </div> 
+                                            <div class="col-12 d-flex mx-0 align-items-center border-top pt-2 mb-2 px-0 justify-content-around">
+                                                <strong class="font-weight-bold text-sm my-0 py-0 flex-shrink-0">6,000 Rs</strong>
+                                                <a href="" class="btn border-orange text-sm py-1 text-orange px-4 font-weight-bold">Search</a>                    
+                                            </div>
+                                        </div>    
+                    
+                                    </div>                
+                                </section>
+                            </div>                    
+                        </div>
+                        <div class="col-md-12 text-center py-4">
+                            <a href="/tour_and_trips.html" class="btn border-white text-white hover-white px-5">View All</a>
+                        </div>
+                    </section>
+            
+                </div>
+            </div>
+        </div>
+    </section>      
+  
+
+
+
+    <section class="position-relative bg-img py-5 d-none" style="background-image: url(/assets/affiliate_services_bg.png);">
+        <div class="px-0 container py-5">
+            <div class="row mx-auto justify-content-center">
+                <div class="col-md-12">
+                    <section class="px-0 text-center mb-2 mb-md-4">
+                        <div class="row mx-0 justify-content-center align-items-center">
+                            <section class="text-center mb-4" aria-label="what-you-can-do-with-us-title">
+                                <h4 class="font-weight-bold text-aqua">AFFILIATED SERVICES</h4>
+                                <img src="./assets/namelines.png" width="160px" alt="">
+                            </section>                                
+                        </div>
+                    </section>      
+                    <section class="px-0">
+                        <div class="row mx-0 px-4 py-2 flex-nowrap flex-md-wrap" style="overflow: auto;">    
+                            <div class="col-md-3 p-2 flex-shrink-0">
+                                <div class="mt-md-0 text-center bg-white shadow p-3 mx-0" style="border-radius: 5px;">
+                                    <img src="./assets/restaurant_icon.png" width="30px" alt="">                
+                                    <h6 class="my-3 font-weight-bold">Restaurants</h6>
+                                    <p class="text-sm text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ducimus ad, ea incidunt libero voluptatum  atque perferendis</p> 
+                                </div>    
+                            </div>
+                            <div class="col-md-3 p-2 flex-shrink-0">
+                                <div class="mt-md-0 text-center bg-white shadow p-3 mx-0" style="border-radius: 5px;">
+                                    <img src="./assets/hotel_icon.png" width="30px" alt="">                
+                                    <h6 class="my-3 font-weight-bold">Hotel</h6>
+                                    <p class="text-sm text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ducimus ad, ea incidunt libero voluptatum  atque perferendis</p> 
+                                </div>    
+                            </div>
+                            <div class="col-md-3 p-2 flex-shrink-0">
+                                <div class="mt-md-0 text-center bg-white shadow p-3 mx-0" style="border-radius: 5px;">
+                                    <img src="./assets/pitstip_icon.png" width="30px" alt="">                
+                                    <h6 class="my-3 font-weight-bold">Pitstop</h6>
+                                    <p class="text-sm text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ducimus ad, ea incidunt libero voluptatum  atque perferendis</p> 
+                                </div>    
+                            </div>
+                            <div class="col-md-3 p-2 flex-shrink-0">
+                                <div class="mt-md-0 text-center bg-white shadow p-3 mx-0" style="border-radius: 5px;">
+                                    <img src="./assets/transportation_icon.png" width="30px" alt="">                
+                                    <h6 class="my-3 font-weight-bold">Transportation</h6>
+                                    <p class="text-sm text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ducimus ad, ea incidunt libero voluptatum  atque perferendis</p> 
+                                </div>    
+                            </div>
+                            <div class="col-md-3 p-2 flex-shrink-0">
+                                <div class="mt-md-0 text-center bg-white shadow p-3 mx-0" style="border-radius: 5px;">
+                                    <img src="./assets/adventuresite_icon.png" width="30px" alt="">                
+                                    <h6 class="my-3 font-weight-bold">Adventure Sites</h6>
+                                    <p class="text-sm text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ducimus ad, ea incidunt libero voluptatum  atque perferendis</p> 
+                                </div>    
+                            </div>                        
+                        </div>
+                    </section>
+            
+                </div>
+            </div>
+        </div>     
+    </section>     
+
+    <section class="container-fluid bg-light py-5">
+        <!-- OUR SPECIAL OFFERS TITLE -->
+        <section class="container text-left px-0" aria-label="section-title">
+            <div class="row mx-0 px-0">
+                <div class="col-12 text-center">
+                    <h4 class="text-green font-weight-bold text-aqua">DESTINATIONS</h4>
+                    <img src="./assets/namelines.png" width="160px" alt="" class="mb-4">   
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="accordion" id="destinationParent" style="box-shadow: none">
+
+                        <div class="card bg-transparent mb-3" style="box-shadow: none; border: transparent; border-radius: 0; border-bottom: 1px solid black;">
+                            <div class="card-header border-0 px-0 py-0 bg-transparent" id="destinationHeadingOne" >
+                                <h6 class="mb-0">
+                                <button class="btn text-left font-weight-bold w-100" type="button" data-toggle="collapse" data-target="#destinationOne" data-map="gilgit-map" aria-expanded="true" aria-controls="destinationOne">
+                                    <span class="w-100">
+                                        <span class="mdi mdi-plus-box-outline text-orange mr-3"></span>
+                                        <span>Gligit</span>
+                                    </span>
+                                </button>
+                                </h6>
+                            </div>
+                            <div id="destinationOne" class="collapse show" aria-labelledby="destinationHeadingOne" data-parent="#destinationParent">
+                                <div class="card-body text-sm font-weight-normal text-left">
+                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon</p>
+                                <div class="w100 text-right">
+                                    <a href="/destinations.html" class="btn bg-orange text-white tiny-text py-1 font-weight-bold">Read More</a>
+                                </div>
+                                </div>
+                                <div class="w-100 bg-img bg-light position-relative d-block d-md-none" style="height: 400px; background-image: url(/assets/map-bg.png);">     
+                                    <a href="javascript:void(0)" style="position: relative; left: -108px; top: 2px;"><img src="/assets/giligt/khunjerab.png" width="80px" class="position-absolute" alt=""></a>                        
+                                    <a href="javascript:void(0)" style="position: relative; left: -159px; top: 68px;"><img src="/assets/giligt/nalta.png" width="80px" class="position-absolute" alt=""></a>                        
+                                    <a href="javascript:void(0)" style="position: relative; left: -182px; top: 142px;"><img src="/assets/giligt/khaplu.png" width="80px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: -145px; top: 182px;"><img src="/assets/giligt/shigar.png" width="80px" class="position-absolute" alt=""></a>                     
+                                    <a href="javascript:void(0)" style="position: relative; left: -169px; top: 258px;"><img src="/assets/giligt/deosai.png" width="80px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: -87px; top: 265px;"><img src="/assets/giligt/shandoor.png" width="80px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: -35px; top: 200px;"><img src="/assets/giligt/phandar.png" width="80px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: 2px; top: 267px;"><img src="/assets/giligt/skardu.png" width="80px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: 71px; top: 217px;"><img src="/assets/giligt/astor.png" width="80px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: 100px; top: 140px;"><img src="/assets/giligt/shimshal.png" width="80px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: 53px; top: 96px;"><img src="/assets/giligt/hunza.png" width="80px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: -15px; top: 133px;"><img src="/assets/giligt/misgar.png" width="80px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: 104px; top: 37px;"><img src="/assets/giligt/gulmit.png" width="80px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: 52px; top: -3px;"><img src="/assets/giligt/chipursan.png" width="80px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: -23px; top: 37px;"><img src="/assets/giligt/nagar.png" width="80px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: -107px; top: 109px;"><img src="/assets/giligt/passu.png" width="80px" class="position-absolute" alt=""></a>                               
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <div class="card bg-transparent mb-3" style="box-shadow: none; border: transparent; border-radius: 0; border-bottom: 1px solid black;">
+                            <div class="card-header border-0 px-0 py-0 bg-transparent" id="destinationHeadingTwo" >
+                                <h6 class="mb-0">
+                                <button class="btn text-left font-weight-bold w-100" type="button" data-toggle="collapse" data-target="#destinationTwo" data-map="sindh-map" aria-expanded="true" aria-controls="destinationTwo">
+                                    <span class="w-100">
+                                        <span class="mdi mdi-plus-box-outline text-orange mr-3"></span>
+                                        <span>Sindh</span>
+                                    </span>
+                                </button>
+                                </h6>
+                            </div>
+                            <div id="destinationTwo" class="collapse hide" aria-labelledby="destinationHeadingTwo" data-parent="#destinationParent">
+                                <div class="card-body text-sm font-weight-normal text-left">
+                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon</p>
+                                <div class="w100 text-right">
+                                    <a href="/destinations.html" class="btn bg-orange text-white tiny-text py-1 font-weight-bold">Read More</a>
+                                </div>
+                                </div>
+                                <div class="w-100 bg-img bg-light position-relative d-block d-md-none" style="height: 400px; background-image: url(/assets/map-bg.png);">     
+                                    <a href="javascript:void(0)" id="circle1" style="position: relative; left: -155px; top: 119px;"><img src="/assets/sindh/gorakh-hill-station.png" width="150px" class="position-absolute" alt=""></a>                        
+                                    <a href="javascript:void(0)" id="circle2" style="position: relative; left: -66px; top: 180px;"><img src="/assets/sindh/karachi.png" width="90px" class="position-absolute" alt=""></a>                        
+                                    <a href="javascript:void(0)" id="circle3" style="position: relative; left: 54px; top: 80px;"><img src="/assets/sindh/ranikot-fort.png" width="90px" class="position-absolute" alt=""></a>                               
+                                </div>
+
+
+                            </div>
+                        </div>  
+                        
+                        <div class="card bg-transparent mb-3" style="box-shadow: none; border: transparent; border-radius: 0; border-bottom: 1px solid black;">
+                            <div class="card-header border-0 px-0 py-0 bg-transparent" id="destinationHeadingThree" >
+                                <h6 class="mb-0">
+                                <button class="btn text-left font-weight-bold w-100" type="button" data-toggle="collapse" data-target="#destinationThree" data-map="punjab-map" aria-expanded="true" aria-controls="destinationThree">
+                                    <span class="w-100">
+                                        <span class="mdi mdi-plus-box-outline text-orange mr-3"></span>
+                                        <span>Punjab</span>
+                                    </span>
+                                </button>
+                                </h6>
+                            </div>
+                            <div id="destinationThree" class="collapse hide" aria-labelledby="destinationHeadingThree" data-parent="#destinationParent">
+                                <div class="card-body text-sm font-weight-normal text-left">
+                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon</p>
+                                <div class="w100 text-right">
+                                    <a href="/destinations.html" class="btn bg-orange text-white tiny-text py-1 font-weight-bold">Read More</a>
+                                </div>
+                                </div>
+                                <div class="w-100 bg-img bg-light position-relative d-block d-md-none" style="height: 400px; background-image: url(/assets/map-bg.png);">     
+                                    <a href="javascript:void(0)" style="position: relative; left: -140px; top: 77px;"><img src="/assets/punjab/fort-munro.png" width="90px" class="position-absolute" alt=""></a>                        
+                                    <a href="javascript:void(0)" style="position: relative; left: -176px; top: 142px;"><img src="/assets/punjab/multan.png" width="90px" class="position-absolute" alt=""></a>                        
+                                    <a href="javascript:void(0)" style="position: relative; left: -133px; top: 253px;"><img src="/assets/punjab/bahawalpur.png" width="90px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: -66px; top: 160px;"><img src="/assets/punjab/islamabad.png" width="90px" class="position-absolute" alt=""></a>                     
+                                    <a href="javascript:void(0)" style="position: relative; left: 73px; top: 194px;"><img src="/assets/punjab/saltrange.png" width="90px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: -37px; top: 40px;"><img src="/assets/punjab/lahore.png" width="90px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: 68px; top: 76px;"><img src="/assets/punjab/soonvalley.png" width="90px" class="position-absolute" alt=""></a>                               
+                                </div>
+
+                            </div>
+                        </div> 
+                        
+                        <div class="card bg-transparent mb-3" style="box-shadow: none; border: transparent; border-radius: 0; border-bottom: 1px solid black;">
+                            <div class="card-header border-0 px-0 py-0 bg-transparent" id="destinationHeadingFour" >
+                                <h6 class="mb-0">
+                                <button class="btn text-left font-weight-bold w-100" type="button" data-toggle="collapse" data-target="#destinationFour" data-map="balochistan-map" aria-expanded="true" aria-controls="destinationFour">
+                                    <span class="w-100">
+                                        <span class="mdi mdi-plus-box-outline text-orange mr-3"></span>
+                                        <span>Balochistan</span>
+                                    </span>
+                                </button>
+                                </h6>
+                            </div>
+                            <div id="destinationFour" class="collapse hide" aria-labelledby="destinationHeadingFour" data-parent="#destinationParent">
+                                <div class="card-body text-sm font-weight-normal text-left">
+                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon</p>
+                                <div class="w100 text-right">
+                                    <a href="/destinations.html" class="btn bg-orange text-white tiny-text py-1 font-weight-bold">Read More</a>
+                                </div>
+                                </div>
+                                <div class="w-100 bg-img bg-light position-relative d-block d-md-none" style="height: 400px; background-image: url(/assets/map-bg.png);">     
+                                    <a href="javascript:void(0)" style="position: relative; left: -169px; top: 134px;"><img src="/assets/balochistan/kundmir.png" width="100px" class="position-absolute" alt=""></a>                        
+                                    <a href="javascript:void(0)" style="position: relative; left: 0px; top: 79px;"><img src="/assets/balochistan/quetta.png" width="100px" class="position-absolute" alt=""></a>                        
+                                    <a href="javascript:void(0)" style="position: relative; left: -171px; top: 293px;"><img src="/assets/balochistan/gwadar.png" width="100px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: -56px; top: 264px;"><img src="/assets/balochistan/astola_island.png" width="100px" class="position-absolute" alt=""></a>                     
+                                    <a href="javascript:void(0)" style="position: relative; left: 73px; top: 194px;"><img src="/assets/balochistan/ormara.png" width="100px" class="position-absolute" alt=""></a>                               
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card bg-transparent mb-3" style="box-shadow: none; border: transparent; border-radius: 0; border-bottom: 1px solid black;">
+                            <div class="card-header border-0 px-0 py-0 bg-transparent" id="destinationHeadingFive" >
+                                <h6 class="mb-0">
+                                <button class="btn text-left font-weight-bold w-100" type="button" data-toggle="collapse" data-target="#destinationFive" data-map="kpk-map" aria-expanded="true" aria-controls="destinationFive">
+                                    <span class="w-100">
+                                        <span class="mdi mdi-plus-box-outline text-orange mr-3"></span>
+                                        <span>Khyber Pakhtunkhwan</span>
+                                    </span>
+                                </button>
+                                </h6>
+                            </div>
+                            <div id="destinationFive" class="collapse hide" aria-labelledby="destinationHeadingFive" data-parent="#destinationParent">
+                                <div class="card-body text-sm font-weight-normal text-left">
+                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon</p>
+                                <div class="w100 text-right">
+                                    <a href="/destinations.html" class="btn bg-orange text-white tiny-text py-1 font-weight-bold">Read More</a>
+                                </div>
+                                </div>
+                                <div class="w-100 bg-img bg-light position-relative d-block d-md-none" style="height: 400px; background-image: url(/assets/map-bg.png);">     
+                                    <a href="javascript:void(0)" style="position: relative; left: -147px; top: 11px;"><img src="/assets/kpk/chitral.png" width="90px" class="position-absolute" alt=""></a>                        
+                                    <a href="javascript:void(0)" style="position: relative; left: -174px; top: 81px;"><img src="/assets/kpk/galiyat.png" width="90px" class="position-absolute" alt=""></a>                        
+                                    <a href="javascript:void(0)" style="position: relative; left: -138px; top: 142px;"><img src="/assets/kpk/kalam.png" width="90px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: -177px; top: 230px;"><img src="/assets/kpk/cherat.png" width="90px" class="position-absolute" alt=""></a>                     
+                                    <a href="javascript:void(0)" style="position: relative; left: -84px; top: 267px;"><img src="/assets/kpk/malam-jabba.png" width="90px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: -22px; top: 196px;"><img src="/assets/kpk/miandem.png" width="90px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: 82px; top: 227px;"><img src="/assets/kpk/thandiani.png" width="90px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: 70px; top: 142px;"><img src="/assets/kpk/naran.png" width="90px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: 92px; top: 18px;"><img src="/assets/kpk/shogran.png" width="90px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: 3px; top: 99px;"><img src="/assets/kpk/kalash.png" width="90px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: -85px; top: 61px;"><img src="/assets/kpk/kumrat.png" width="90px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: -46px; top: -11px;"><img src="/assets/kpk/khanpur.png" width="90px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: -1px; top: 27px;"><img src="/assets/kpk/sharan.png" width="90px" class="position-absolute" alt=""></a>                               
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <div class="card bg-transparent mb-3" style="box-shadow: none; border: transparent; border-radius: 0; border-bottom: 1px solid black;">
+                            <div class="card-header border-0 px-0 py-0 bg-transparent" id="destinationHeadingSix" >
+                                <h6 class="mb-0">
+                                <button class="btn text-left font-weight-bold w-100" type="button" data-toggle="collapse" data-target="#destinationSix" data-map="ajk-map" aria-expanded="true" aria-controls="destinationSix">
+                                    <span class="w-100">
+                                        <span class="mdi mdi-plus-box-outline text-orange mr-3"></span>
+                                        <span>Azzad Jammu & Kashmir</span>
+                                    </span>
+                                </button>
+                                </h6>
+                            </div>
+                            <div id="destinationSix" class="collapse hide" aria-labelledby="destinationHeadingSix" data-parent="#destinationParent">
+                                <div class="card-body text-sm font-weight-normal text-left">
+                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon</p>
+                                <div class="w100 text-right">
+                                    <a href="/destinations.html" class="btn bg-orange text-white tiny-text py-1 font-weight-bold">Read More</a>
+                                </div>
+                                </div>
+                                <div class="w-100 bg-img position-relative d-block d-md-none" style="height: 400px; background-image: url(/assets/map-bg.png);">     
+                                    <a href="javascript:void(0)" style="position: relative; left: -175px; top: 281px;"><img src="/assets/azad_kashmir/bagh.png" width="100px" class="position-absolute" alt=""></a>                        
+                                    <a href="javascript:void(0)" style="position: relative; left: 75px; top: 30px;"><img src="/assets/azad_kashmir/muzaffarabad.png" width="100px" class="position-absolute" alt=""></a>                        
+                                    <a href="javascript:void(0)" style="position: relative; left: -179px; top: 148px;"><img src="/assets/azad_kashmir/neelumvalley.png" width="100px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: 75px; top: 233px;"><img src="/assets/azad_kashmir/newmirpur.png" width="100px" class="position-absolute" alt=""></a>                     
+                                    <a href="javascript:void(0)" style="position: relative; left: -49px; top: 199px;"><img src="/assets/azad_kashmir/rawlakot.png" width="100px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: -159px; top: -10px;"><img src="/assets/azad_kashmir/sharda.png" width="100px" class="position-absolute" alt=""></a>                               
+                                    <a href="javascript:void(0)" style="position: relative; left: 74px; top: 125px;"><img src="/assets/azad_kashmir/taobutt.png" width="100px" class="position-absolute" alt=""></a>                             
+                                    <a href="javascript:void(0)" style="position: relative; left: -77px; top: 58px;"><img src="/assets/azad_kashmir/Kel-and-Arrangkel-pin.png" width="100px" class="position-absolute" alt=""></a>    
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                  
+                </div>
+                <div class="col-md-8 position-relative px-0 align-self-center d-none">
+                    <img src="./assets/KPK.png" class="w-100 position-relative" style="z-index: 10000;" alt="">            
+                </div>
+                <div class="col-lg-8 d-md-flex d-none align-items-center justify-content-center circle-container" style="height: 400px;">
+                    <img src="/assets/map_bg.png" class="w-100 position-absolute" alt="">
+                    <section id="gilgit-map">
+                        <a href="#"><img src="/assets/giligt/astor.png" width="100px" class="position-absolute" alt="" style="left: 688px; top: 222px;"></a>                        
+                        <a href="#"><img src="/assets/giligt/chipursan.png" width="100px" class="position-absolute" alt="" style="left: 477px; top: 18px;"></a>                        
+                        <a href="#"><img src="/assets/giligt/deosai.png" width="100px" class="position-absolute" alt="" style="left: 173px; top: 237px;"></a>                        
+                        <a href="#"><img src="/assets/giligt/gulmit.png" width="100px" class="position-absolute" alt="" style="left: 603px; top: 48px;"></a>                        
+                        <a href="#"><img src="/assets/giligt/hunza.png" width="100px" class="position-absolute" alt="" style="left: 521px; top: 99px;"></a>                        
+                        <a href="#"><img src="/assets/giligt/khaplu.png" width="100px" class="position-absolute" alt="" style="left: 123px; top: 99px;"></a>                        
+                        <a href="#"><img src="/assets/giligt/khunjerab.png" width="100px" class="position-absolute" alt="" style="left: 296px; top: 2.00001px;"></a>                        
+                        <a href="#"><img src="/assets/giligt/misgar.png" width="100px" class="position-absolute" alt="" style="left: 421px; top: 125.987px;"></a>                        
+                        <a href="#"><img src="/assets/giligt/nagar.png" width="100px" class="position-absolute" alt="" style="left: 374px; top: 52px;"></a>                        
+                        <a href="#"><img src="/assets/giligt/nalta.png" width="100px" class="position-absolute" alt="" style="left: 198px; top: 34.9875px;"></a>                        
+                        <a href="#"><img src="/assets/giligt/passu.png" width="100px" class="position-absolute" alt="" style="left: 279px; top: 110px;"></a>                        
+                        <a href="#"><img src="/assets/giligt/phandar.png" width="100px" class="position-absolute" alt="" style="left: 408px; top: 209px;"></a>                        
+                        <a href="#"><img src="/assets/giligt/shandoor.png" width="100px" class="position-absolute" alt="" style="left: 590px; top: 203px;"></a>                        
+                        <a href="#"><img src="/assets/giligt/shigar.png" width="100px" class="position-absolute" alt="" style="left: 177px; top: 145.987px;"></a>                        
+                        <a href="#"><img src="/assets/giligt/shimshal.png" width="100px" class="position-absolute" alt="" style="left: 679px; top: 102px;"></a>                        
+                        <a href="#"><img src="/assets/giligt/skardu.png" width="100px" class="position-absolute" alt="" style="left: 21px; top: 80px;"></a>                        
+                    </section>
+                    <section id="sindh-map" class="d-none">
+                        <a href="#"><img src="/assets/sindh/gorakh-hill-station.png" width="150px" class="position-absolute" alt="" style="left: 137.983px; top: 97.9801px;"></a>                        
+                        <a href="#"><img src="/assets/sindh/karachi.png"  width="100px" class="position-absolute" alt="" style="left: 358.989px; top: 150.997px;"></a>                        
+                        <a href="#"><img src="/assets/sindh/ranikot-fort.png" width="100px" class="position-absolute" alt="" style="left: 540.974px; top: 78.9744px;"></a>                               
+                    </section>
+                    <section id="punjab-map" class="d-none">
+                        <a href="#"><img src="/assets/punjab/bahawalpur.png" width="100px" class="position-absolute" alt="" style="left: 103.979px; top: 135.979px;"></a>                        
+                        <a href="#"><img src="/assets/punjab/fort-munro.png" width="100px" class="position-absolute" alt="" style="left: 221.979px; top: 44.9896px;"></a>                        
+                        <a href="#"><img src="/assets/punjab/islamabad.png" width="100px" class="position-absolute" alt="" style="left: 361.969px; top: 167.969px;"></a>                               
+                        <a href="#"><img src="/assets/punjab/lahore.png" width="100px" class="position-absolute" alt="" style="left: 467.969px; top: 52.9688px;"></a>                               
+                        <a href="#"><img src="/assets/punjab/multan.png" width="100px" class="position-absolute" alt="" style="left: 176.969px; top: 233.969px;"></a>                               
+                        <a href="#"><img src="/assets/punjab/saltrange.png" width="100px" class="position-absolute" alt="" style="left: 663.969px; top: 228.969px;"></a>                               
+                        <a href="#"><img src="/assets/punjab/soonvalley.png" width="100px" class="position-absolute" alt="" style="left: 583.969px; top: 107.969px;"></a>                               
+                    </section>
+                    <section id="balochistan-map" class="d-none">
+                        <a href="#"><img src="/assets/balochistan/astola_island.png" width="100px" class="position-absolute" alt="" style="left: 409.969px; top: 220.969px;"></a>                       
+                        <a href="#"><img src="/assets/balochistan/gwadar.png" width="100px" class="position-absolute" alt="" style="left: 176.969px; top: 228.99px;"></a>                        
+                        <a href="#"><img src="/assets/balochistan/kundmir.png" width="100px" class="position-absolute" alt="" style="left: 94.9688px; top: 84.9688px;"></a>                               
+                        <a href="#"><img src="/assets/balochistan/ormara.png" width="100px" class="position-absolute" alt="" style="left: 625.969px; top: 148.969px;"></a>                               
+                        <a href="#"><img src="/assets/balochistan/quetta.png" width="100px" class="position-absolute" alt="" style="left: 468.969px; top: 52.9688px;"></a>                               
+                    </section>
+                    <section id="kpk-map" class="d-none">
+                        <a href="#"><img src="/assets/kpk/cherat.png" width="100px" class="position-absolute" alt="" style="left: 30.9688px; top: 71.9688px;"></a>                        
+                        <a href="#"><img src="/assets/kpk/chitral.png" width="100px" class="position-absolute" alt="" style="left: 170.969px; top: 34.9792px;"></a>                        
+                        <a href="#"><img src="/assets/kpk/galiyat.png" width="100px" class="position-absolute" alt="" style="left: 107.969px; top: 124.969px;"></a>                               
+                        <a href="#"><img src="/assets/kpk/kalam.png" width="100px" class="position-absolute" alt="" style="left: 192.969px; top: 162.969px;"></a>                     
+                        <a href="#"><img src="/assets/kpk/kalash.png" width="100px" class="position-absolute" alt="" style="left: 414.969px; top: 115.969px;"></a>                               
+                        <a href="#"><img src="/assets/kpk/khanpur.png" width="100px" class="position-absolute" alt="" style="left: 377.969px; top: 17.9688px;"></a>                               
+                        <a href="#"><img src="/assets/kpk/kumrat.png" width="100px" class="position-absolute" alt="" style="left: 276.969px; top: 88.9688px;"></a>                             
+                        <a href="#"><img src="/assets/kpk/malam-jabba.png" width="100px" class="position-absolute" alt="" style="left: 169.969px; top: 274.969px;"></a>                               
+                        <a href="#"><img src="/assets/kpk/miandem.png" width="100px" class="position-absolute" alt="" style="left: 400.969px; top: 208.969px;"></a>                               
+                        <a href="#"><img src="/assets/kpk/naran.png" width="100px" class="position-absolute" alt="" style="left: 577.969px; top: 116.969px;"></a>                               
+                        <a href="#"><img src="/assets/kpk/sharan.png" width="100px" class="position-absolute" alt="" style="left: 486.969px; top: 50.9688px;"></a>                               
+                        <a href="#"><img src="/assets/kpk/shogran.png" width="100px" class="position-absolute" alt="" style="left: 657.969px; top: 41.9688px;"></a>                               
+                        <a href="#"><img src="/assets/kpk/thandiani.png" width="100px" class="position-absolute" alt="" style="left: 644.969px; top: 212.969px;"></a>                               
+                    </section>
+                    <section id="ajk-map" class="d-none">
+                        <a href="#"><img src="/assets/azad_kashmir/bagh.png" width="100px" class="position-absolute" alt="" style="left: 124.969px; top: 251.969px;"></a>                        
+                        <a href="#"><img src="/assets/azad_kashmir/muzaffarabad.png" width="100px" class="position-absolute" alt="" style="left: 504.969px; top: 60.9792px;"></a>                        
+                        <a href="#"><img src="/assets/azad_kashmir/neelumvalley.png" width="100px" class="position-absolute" alt="" style="left: 96.9688px; top: 139.969px;"></a>                               
+                        <a href="#"><img src="/assets/azad_kashmir/newmirpur.png" width="100px" class="position-absolute" alt="" style="left: 669.969px; top: 234.969px;"></a>                     
+                        <a href="#"><img src="/assets/azad_kashmir/rawlakot.png" width="100px" class="position-absolute" alt="" style="left: 362.969px; top: 197.969px;"></a>                               
+                        <a href="#"><img src="/assets/azad_kashmir/sharda.png" width="100px" class="position-absolute" alt="" style="left: 239.969px; top: 29.9688px;"></a>                               
+                        <a href="#"><img src="/assets/azad_kashmir/taobutt.png" width="100px" class="position-absolute" alt="" style="left: 612.969px; top: 125.969px;"></a>                             
+                        <a href="#"><img src="/assets/azad_kashmir/taoubutt.png" width="100px" class="position-absolute" alt="" style="left: 345.969px; top: 81.9688px;"></a>                               
+                    </section>
+                </div>
+    
+            </div>
+        </section>
+        <!-- OUR SPECIAL OFFERS TITLE -->
+
+    </section>
+
+    
+
+
+
+
+    <section class="position-relative mb-5" style="z-index: 10000;">
+        <img src="./assets/adventure_bg.png" class="w-100 d-none d-md-block" alt="">
+        <div class="w-100 position-md-absolute position-relative" style="top: 0px; left: 0px; bottom: 0px;">
+            <div class="d-flex align-items-center justify-content-center h-md-100">
+                <div class="container px-0">
+                    <div class="row mx-auto justify-content-center">
+                        <div class="col-md-12">
+                            <section class="px-0 text-center mb-2 mb-md-4">
+                                <div class="row mx-0 justify-content-center align-items-center">
+                                    <section class="text-center mb-4" aria-label="what-you-can-do-with-us-title">
+                                        <h4 class="font-weight-bold text-aqua">ADVENTURES</h4>
+                                        <img src="./assets/namelines.png" width="160px" alt="">
+                                    </section>                                
+                                </div>
+                            </section>      
+                            <section class="px-0">
+                                <div class="row mx-0 px-0 justify-content-center flex-wrap flex-md-nowrap">    
+                                    <div class="p-2 my-2">               
+                                        <section class="position-relative" style="border-radius: 10px;">
+                                            <div class="text-center">
+                                                <img class="block mb-4" src="./assets/female-image.png" width="100%" alt="">       
+                                                <section class="py-4 position-absolute w-100 text-left"  style="bottom: 20px; left: 20px;">
+                                                    <h5 class="text-sm mb-0 font-weight-bold text-white">For Females Only</h5>
+                                                    <div class="w-25 border-bottom py-1 border-2"></div>
+                                                </section>                                            
+                                            </div>                
+                                        </section>
+                                    </div>    
+                                    <div class="p-2 my-2 ">               
+                                        <section class="position-relative" style="border-radius: 10px;">
+                                            <div class="text-center">
+                                                <img class="block mb-4" src="./assets/adult_image.png" width="100%" alt="">       
+                                                <section class="py-4 position-absolute w-100 text-left"  style="bottom: 20px; left: 20px;">
+                                                    <h5 class="text-sm mb-0 font-weight-bold text-white">Adults Only</h5>
+                                                    <div class="w-25 border-bottom py-1 border-2"></div>
+                                                </section>                                            
+                                            </div>                
+                                        </section>
+                                    </div>    
+                                    <div class="p-2 my-2 ">               
+                                        <section class="position-relative" style="border-radius: 10px;">
+                                            <div class="text-center">
+                                                <img class="block mb-4" src="./assets/family-image.png" width="100%" alt="">       
+                                                <section class="py-4 position-absolute w-100 text-left"  style="bottom: 20px; left: 20px;">
+                                                    <h5 class="text-sm mb-0 font-weight-bold text-white">Families Friendly</h5>
+                                                    <div class="w-25 border-bottom py-1 border-2"></div>
+                                                </section>                                            
+                                            </div>                
+                                        </section>
+                                    </div>    
+                                    <div class="p-2 my-2 ">               
+                                        <section class="position-relative" style="border-radius: 10px;">
+                                            <div class="text-center">
+                                                <img class="block mb-4" src="./assets/friends.png" width="100%" alt="">       
+                                                <section class="py-4 position-absolute w-100 text-left"  style="bottom: 20px; left: 20px;">
+                                                    <h5 class="text-sm mb-0 font-weight-bold text-white">Group of Friends</h5>
+                                                    <div class="w-25 border-bottom py-1 border-2"></div>
+                                                </section>                                            
+                                            </div>                
+                                        </section>
+                                    </div>      
+                                    <div class="p-2 my-2 ">               
+                                        <section class="position-relative" style="border-radius: 10px;">
+                                            <div class="text-center">
+                                                <img class="block mb-4" src="./assets/solo-image.png" width="100%" alt="">       
+                                                <section class="py-4 position-absolute w-100 text-left"  style="bottom: 20px; left: 20px;">
+                                                    <h5 class="text-sm mb-0 font-weight-bold text-white">For Solo/Single Travellers</h5>
+                                                    <div class="w-25 border-bottom py-1 border-2"></div>
+                                                </section>                                            
+                                            </div>                
+                                        </section>
+                                    </div>                                                                                                 
+                                </div>
+                                <div class="w-100 text-center">                                    
+                                    <a href="/adventures.html" class="btn bg-orange text-white px-5 font-weight-bold">View all</a>   
+                                </div>
+                            </section>
+                    
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>  
+
+
+
+
+    <section class="container-fluid position-relative px-0 mx-0 bg-img translatey-md--110px py-md-5" style="background-image: url(/assets/testimonial_bg2.png);">
+        <div class="px-0 mx-auto container py-4">                
+            <div class="row mx-0 px-0 py-md-5 align-items-center">
+                <div class="col-md-5 text-center position-relative">
+                    <h4 class="font-weight-bold text-white">TESTIMONIALS</h4>
+                    <img src="./assets/testimonial_line.png" width="160px" alt="">                    
+                    <br>
+                    <img src="/assets/testimonial_stroke_outline.png" class="position-absolute d-none d-md-block" width="120px" style="left: 100px; top: 10px;" alt="">
+                    <div class="my-2 position-relative" style="z-index: 10000;">
+                        <a href="/testimonials.html" class="btn bg-orange text-white my-5 ml-0 ml-md-5 px-5 font-weight-bold">View all</a>   
+                    </div>
+                </div>
+                <div class="col-md-7 position-relative px-0 px-md-4 py-5">
+                    <section class="slider-section">
+                        <div id="carousel3" class="carousel slide" data-ride="carousel3">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators" style="bottom: -66px;">
+                                <li data-target="#carousel3" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel3" data-slide-to="1"></li>
+                                <li data-target="#carousel3" data-slide-to="2"></li>
+                            </ol> <!-- End of Indicators -->
+            
+                            <!-- Carousel Content -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active px-5 px-md-0" style="height: auto;">
+                                    <div class="row mx-0">
+                                        <div class="col-md-6">
+                                            <section class="bg-white shadow position-relative my-md-0" style="border-radius: 10px;">
+                                                <div class="text-center">
+                                                    <img class="block mb-4 border-radius-10-10-0-0" src="./assets/testimonial_1.png" width="100%" alt="">       
+                                                    <section class="py-4 position-absolute w-100 text-center"  style="top: 0px; left: 0px;">
+                                                    </section>            
+                                                    <p class="px-3 text-sm text-left text-dark-grey" style="line-height: 200%;">
+                                                        Best family trip ever!!  My siblings and I had so much fun exploring Misgar and Hunza. 
+                                                    </p>    
+                                                    <div class="row border-top mx-3 justify-content-around py-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="d-flex w-100">
+                                                                <i class="align-self-start"><img src="./assets/Avatar_1.svg" width="50px" alt=""></i>
+                                                                <p class="ml-2 mt-2 text-left">
+                                                                    <span class="font-weight-bold text-sm text-aqua">Maira Khurram</span><br>
+                                                                    <span class="text-light-grey tiny-text">11 March 2021</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>    
+                                
+                                                </div>                
+                                            </section>    
+                                        </div>
+                                        <div class="col-md-6 d-none d-md-block">
+                                            <section class="bg-white shadow position-relative my-md-0" style="border-radius: 10px;">
+                                                <div class="text-center">
+                                                    <img class="block mb-4 border-radius-10-10-0-0" src="./assets/testimonial_2.png" width="100%" alt="">       
+                                                    <section class="py-4 position-absolute w-100 text-center"  style="top: 0px; left: 0px;">
+                                                    </section>            
+                                                    <p class="px-3 text-sm text-left text-dark-grey" style="line-height: 200%;">
+                                                        My parents were a little skeptical about taking me on my first trekking trip, that too to Patundas 
+                                                    </p>    
+                                                    <div class="row border-top mx-3 justify-content-around py-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="d-flex w-100">
+                                                                <i class="align-self-start"><img src="./assets/Avatar_2.svg" width="50px" alt=""></i>
+                                                                <p class="ml-2 mt-2 text-left">
+                                                                    <span class="font-weight-bold text-sm text-aqua">Hamza Mahmood</span><br>
+                                                                    <span class="text-light-grey tiny-text">11 March 2021</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>    
+                                
+                                                </div>                
+                                            </section>                                            
+                                        </div>
+                                    </div>                                    
+                                </div> <!-- End of Carousel Item -->
+                                <div class="carousel-item px-5 px-md-0" style="height: auto;">
+                                    <div class="row mx-0">
+                                        <div class="col-md-6">
+                                            <section class="bg-white shadow position-relative my-md-0" style="border-radius: 10px;">
+                                                <div class="text-center">
+                                                    <img class="block mb-4 border-radius-10-10-0-0" src="./assets/testimonial_3.png" width="100%" alt="">       
+                                                    <section class="py-4 position-absolute w-100 text-center"  style="top: 0px; left: 0px;">
+                                                    </section>            
+                                                    <p class="px-3 text-sm text-left text-dark-grey" style="line-height: 200%;">
+                                                        Aao Chalo understood the need of a busy working mother like me to have a relaxing trip in a short amount of time 
+                                                    </p>    
+                                                    <div class="row border-top mx-3 justify-content-around py-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="d-flex w-100">
+                                                                <i class="align-self-start"><img src="./assets/Avatar_3.svg" width="50px" alt=""></i>
+                                                                <p class="ml-2 mt-2 text-left">
+                                                                    <span class="font-weight-bold text-sm text-aqua">Samira Mumtaz</span><br>
+                                                                    <span class="text-light-grey tiny-text">11 March 2021</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>    
+                                
+                                                </div>                
+                                            </section>
+                                        </div>
+                                        <div class="col-md-6 d-none d-md-block">
+                                            <section class="bg-white shadow position-relative my-md-0" style="border-radius: 10px;">
+                                                <div class="text-center">
+                                                    <img class="block mb-4 border-radius-10-10-0-0" src="./assets/testimonial_4.png" width="100%" alt="">       
+                                                    <section class="py-4 position-absolute w-100 text-center"  style="top: 0px; left: 0px;">
+                                                    </section>            
+                                                    <p class="px-3 text-sm text-left text-dark-grey" style="line-height: 200%;">
+                                                        I am a Pakistani residing in the US and often visit Pakistan in the summer.  
+                                                    </p>    
+                                                    <div class="row border-top mx-3 justify-content-around py-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="d-flex w-100">
+                                                                <i class="align-self-start"><img src="./assets/Avatar_2.svg" width="50px" alt=""></i>
+                                                                <p class="ml-2 mt-2 text-left">
+                                                                    <span class="font-weight-bold text-sm text-aqua">M. Ali</span><br>
+                                                                    <span class="text-light-grey tiny-text">11 March 2021</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>    
+                                
+                                                </div>                
+                                            </section>                                                                                               
+                                        </div>
+                                    </div>                                    
+                                </div> <!-- End of Carousel Item -->
+                                <div class="carousel-item px-5 px-md-0" style="height: auto;">
+                                    <div class="row mx-0">
+                                        <div class="col-md-6">
+                                            <section class="bg-white shadow position-relative my-md-0" style="border-radius: 10px;">
+                                                <div class="text-center">
+                                                    <img class="block mb-4 border-radius-10-10-0-0" src="./assets/testimonial_5.png" width="100%" alt="">       
+                                                    <section class="py-4 position-absolute w-100 text-center"  style="top: 0px; left: 0px;">
+                                                    </section>            
+                                                    <p class="px-3 text-sm text-left text-dark-grey" style="line-height: 200%;">
+                                                        Aao Chalo understood the need of a busy working mother like me to have a relaxing trip in a short amount of time 
+                                                    </p>    
+                                                    <div class="row border-top mx-3 justify-content-around py-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="d-flex w-100">
+                                                                <i class="align-self-start"><img src="./assets/Avatar_3.svg" width="50px" alt=""></i>
+                                                                <p class="ml-2 mt-2 text-left">
+                                                                    <span class="font-weight-bold text-sm text-aqua">Samira Mumtaz</span><br>
+                                                                    <span class="text-light-grey tiny-text">11 March 2021</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                    
+                                                </div>                
+                                            </section>
+                                        </div>
+                                        <div class="col-md-6 d-none d-md-block">
+                                            <section class="bg-white shadow position-relative my-md-0" style="border-radius: 10px;">
+                                                <div class="text-center">
+                                                    <img class="block mb-4 border-radius-10-10-0-0" src="./assets/testimonial_6.png" width="100%" alt="">       
+                                                    <section class="py-4 position-absolute w-100 text-center"  style="top: 0px; left: 0px;">
+                                                    </section>            
+                                                    <p class="px-3 text-sm text-left text-dark-grey" style="line-height: 200%;">
+                                                        I am a Pakistani residing in the US and often visit Pakistan in the summer.  
+                                                    </p>    
+                                                    <div class="row border-top mx-3 justify-content-around py-2">
+                                                        <div class="col-12 px-0">
+                                                            <div class="d-flex w-100">
+                                                                <i class="align-self-start"><img src="./assets/Avatar_2.svg" width="50px" alt=""></i>
+                                                                <p class="ml-2 mt-2 text-left">
+                                                                    <span class="font-weight-bold text-sm text-aqua">M. Ali</span><br>
+                                                                    <span class="text-light-grey tiny-text">11 March 2021</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>    
+                                
+                                                </div>                
+                                            </section>   
+                                        </div>                                            
+                                    </div>                                    
+                                </div> <!-- End of Carousel Item -->             
+
+                            </div> <!-- End of Carousel Content -->
+            
+                            <!-- Previous & Next -->
+                            <a href="#carousel3" class="carousel-control-prev" role="button" data-slide="prev">
+                                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                                <span class="mdi mdi-arrow-left translate-md--100px text-white border-white px-2 py-4"></span>
+                                <span class="sr-only"></span>
+                            </a>
+                            <a href="#carousel3" class="carousel-control-next" role="button" data-slide="next">
+                                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                                <span class="mdi mdi-arrow-right translate-md-100px text-white border-white px-2 py-4"></span>
+                                <span class="sr-only"></span>
+                            </a>
+                        </div> <!-- End of Carousel -->
+                    </section> <!-- End of Slider -->                         
+                </div>
+            </div>
+
+        </div>
+    </section>  
+
+
+
+    <section class="position-relative px-0 mx-0 mt-5 mt-md-0">
+        <img src="./assets/quickenquiry_bg.png" class="w-100 d-none d-md-block" alt="">
+        <div class="w-100 position-md-absolute position-relative" style="top: 0px; left: 0px; bottom: 0px;">
+            <section class="container px-0">
+                <!-- OUR SPECIAL OFFERS TITLE -->
+                <section class="px-0" aria-label="section-title">
+                    <div class="row mx-0 px-0 align-items-center align-items-center justify-content-center px-0 mx-0 h-md-100 container">
+                        <div class="col-md-5 px-0">
+                            <div class="d-flex w-100 text-center justify-content-center">
+                                <i><img src="./assets/quickenquiry_btn.png" width="60px" alt=""></i>
+                                <div class="text-left ml-3">
+                                    <h4 class="font-weight-bold text-aqua mb-1">Quick Enquiry</h4>
+                                    <p class="text-aqua">Get A question? Contact us quickly</p>
+                                </div>
+                            </div>
+                        </div>                
+                        <div class="col-md-7 d-flex flex-wrap justify-content-center text-center pl-0 pl-md-4 mt-4 mt-md-0">
+                            <a href="" class="btn bg-orange text-white mx-2 px-5 my-2 font-weight-bold">Submit Query</a>  
+                            <a href="" class="btn bg-whatsapp mx-2 text-white px-5 my-2 font-weight-bold">
+                                <span class="d-flex align-items-center justify-content-center">
+                                    <span class="mdi mdi-whatsapp text-white mr-2"></span> 
+                                    <span>Submit</span>
+                                </span>
+                            </a>  
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </section>
+
+    
+
+
+    <section class="container-fluid bg-light py-5">
+        <section class="container text-center mb-4" aria-label="what-you-can-do-with-us-title">
+            <h4 class="font-weight-bold text-aqua">LICENSING</h4>
+            <img src="./assets/namelines.png" width="160px" alt="">
+        </section>   
+        <section class="container text-center px-0" aria-label="send-receive-dedicate-boxes">
+            <div class="mx-0 d-flex flex-wrap flex-md-nowrap justify-content-center">
+                <div class="px-4 mt-3 mt-md-0">
+                    <img src="./assets/1.png" class="w-100" alt="">                
+                </div>             
+                <div class="px-4 mt-3 mt-md-0">
+                    <img src="./assets/2.png" class="w-100" alt="">                
+                </div>             
+                <div class="px-4 mt-3 mt-md-0">
+                    <img src="./assets/3.png" class="w-100" alt="">                
+                </div>             
+                <div class="px-4 mt-3 mt-md-0">
+                    <img src="./assets/4.png" class="w-100" alt="">                
+                </div>             
+                <div class="px-4 mt-3 mt-md-0">
+                    <img src="./assets/5.png" class="w-100" alt="">                
+                </div>             
+            </div>
+        </section>
+        <!-- ORANGE MANGO BANANA --> 
+    </section>
+
+    <br>    
+    <a href="#" class="float">
+        <i class="mdi mdi-chat-processing-outline mdi-36px text-orange my-float"></i>
+    </a>
+
+    <footer class="position-relative bg-image bg-footer bg-sm-aqua">
+        <div class="w-100 py-4">
+            <div class="container px-0 py-5">
+                <div class="row mx-0">
+                    <div class="col-md-3 mt-md-0 mt-4">
+                        <a href="" class="btn text-light-grey px-1"><img src="./assets/footer_logo.png" alt="" width="100%"></a>
+                        <div>
+                            <a href="" class="btn text-light-grey px-1"><img src="./assets/facebook_icon.png" alt="" width="30px"></a>
+                            <a href="" class="btn text-light-grey px-1"><img src="./assets/instagram_icon.png" alt="" width="30px"></a>
+                            <a href="" class="btn text-light-grey px-1"><img src="./assets/twitter_icon.png" alt="" width="30px"></a>
+                            <a href="" class="btn text-light-grey px-1"><img src="./assets/youtube_icon.png" alt="" width="30px"></a>                                
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-md-0 mt-4">
+                        <h5 class="text-white font-weight-bold green-left-border py-2 border-bottom border-2 mb-4">Quick Links</h5>
+                        <a href="/homepage.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Home</a>
+                        <a href="/travellers.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Traveller</a>
+                        <a href="/why_aao_chalo.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Why aao Chalo</a>
+                        <a href="/destinations.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Destinations</a>
+                        <a href="/trekking.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Trekking</a>
+                        <a href="/expeditions.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Expeditions</a>
+                        <a href="/tour_and_trips.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Tours & Trips</a>
+                    </div>
+                    <div class="col-md-3 mt-md-0 mt-4">
+                        <h5 class="text-white font-weight-bold green-left-border py-2 border-bottom border-2 mb-4">Other Links</h5>
+                        <a href="/travel_advisory_whethercondition.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Travel Advisory</a>
+                        <a href="/broucher.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Brouchers</a>
+                        <a href="/blogpage.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Blogs</a>
+                        <a href="/vlogs.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Vlog's</a>
+                        <a href="/tour_and_trips.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Tours & Trips</a>
+                        <a href="/image_gallery.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Media Gallery</a>
+                        <a href="/contactus.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Contact us</a>
+                        <a href="/aboutus.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">About us</a>
+                    </div>
+
+                    <div class="col-md-3 mt-md-0 mt-4">
+                        <h5 class="text-white font-weight-bold green-left-border py-2 border-bottom border-2 mb-4">Other Links</h5>
+                        <p class="text-sm text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima unde</p>
+                        <form class="mb-0">
+                            <div class="input-group bg-white">
+                                <input type="text" class="form-control font-weight-bold text-white border-radius-0 border-0 py-0 tiny-text" placeholder="Enter your search here">
+                                <div class="input-group-append">
+                                    <span class="input-group-text bg-orange border-0 text-white" style="border-radius: 0px;">
+                                        <img src="./assets/search_icon.png" width="14px" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                        </form>                        
+                    </div>    
+                </div>
+                <div class="row mx-0 mt-4 hr pt-4">
+                    <div class="col-6 text-left">
+                        <p class="text-white">2021 Decimal Solutions. All rights reserved</p>
+                    </div>
+                    <div class="col-6 text-right text-white">
+                        <a href="/faq.html" class="text-white">FAQ</a>       
+                        <span class="mx-2">|</span>                 
+                        <a href="/support.html" class="text-white">Support</a>       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+</html>

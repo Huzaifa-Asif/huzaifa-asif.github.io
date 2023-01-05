@@ -1,0 +1,1037 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.jqueryui.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">   -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="./style.css?v1.1">
+    <link rel="stylesheet" href="./color.css">
+
+    <title>Bone Fire Page</title>
+</head>
+<body class="bg-light">
+
+    <!-- MOBILE VIEW CODE -->
+    <section class="d-block d-lg-none">
+
+        <div id="mySidenav" class="sidenav bg-dark-blue" style="z-index: 5000;">
+            <a href="javascript:void(0)" class="closebtn text-white" onclick="closeNav()">&times;</a>
+            <a href="/why_aao_chalo.html" class="btn btn-block text-white text-left text-sm">Why Aao Chalo</a>
+            <a href="/destinations.html" class="btn btn-block text-white text-left text-sm">Destinations</a>
+            <a href="/trekking.html" class="btn btn-block text-white text-left text-sm">Trekking</a>
+            <a href="/expeditions.html" class="btn btn-block text-white text-left text-sm">Expeditions</a>
+            <a href="/tour_and_trips.html" class="btn btn-block text-white text-left text-sm">Tour & Trips</a>
+            <a href="/travellers.html" class="btn btn-block text-white text-left text-sm">Travellers</a>
+        </div>            
+        <header class="d-flex justify-content-between between py-2 px-2 bg-dark-blue align-items-center position-relative">
+            <a href="javascript:void(0)" onclick="openNav()" class="btn mdi mdi-menu text-white"></a>
+            <a href="/homepage.html"><img src="/assets/aaochalo_header_logo.png" width="60px" alt=""></a>
+            <div>
+                <a href="#" onclick="showSmSearchField()" class="mdi mdi-magnify mx-2 text-white"></a>
+                <!-- <a href="#" class="mdi mdi-download mx-2 text-white"></a> -->
+                <form action="/faq.html" id="search-field-sm" class="position-absolute mb-0 bg-dark-blue h-100 d-none w-100" style="top: 0px; left: 0px;">
+                    <div class="input-group">
+                        <div class="input-group-prepend mr-3">
+                            <span onclick="hideSmSearchField()" class="input-group-text bg-transparent border-0 text-white mdi mdi-chevron-left text-white"></span>
+                        </div>
+                        <input type="text" class="form-control px-0 border-radius-0 border-0 text-white" placeholder="What are you looking for..." >
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent border-0 text-white mdi mdi-magnify text-white"></span>
+                        </div>
+                    </div>
+                </form>                     
+            </div>
+        </header>
+
+    </section>
+    <!-- MOBILE VIEW CODE -->
+    <!-- HEADER -->    
+
+    <!-- HEADER -->
+    <header aria-label="top-header" class="container-fluid text-white bg-dark-blue py-4 shadow d-lg-block d-none my-0">
+        <div class="container">
+            <div class="row mx-0 justify-content-between align-items-center">
+                <div arial-label="left">
+                    <span class="text-sm mr-2 font-weight-bold">
+                        <img src="./assets/call_icon.png" class="mr-1" width="22px" alt="">
+                        +91 332 543 4567
+                    </span>
+                    <span class="text-sm mx-2 d-none d-md-inline-block ">
+                        <a href="/travel_advisory_whethercondition.html" class="text-white font-weight-bold">Travel Advisory</a>
+                    </span>
+                    <span class="text-sm mx-2 d-none d-md-inline-block ">
+                        <a href="/broucher.html" class="text-white font-weight-bold">Brouchers</a>
+                    </span>
+                </div>
+                <div arial-label="right">
+                    <span class="text-sm mr-2 d-none d-md-inline-block ">
+                        <a href="/blogpage.html" class="text-white font-weight-bold">Traveller's Blog</a>
+                    </span>
+                    <form class="d-inline-block ml-4 mb-0">
+                        <div class="input-group border-bottom">
+                            <input type="text" class="form-control font-weight-bold px-0 text-white border-radius-0 border-0 py-0" value="Search" style="max-width: 50px;">
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-transparent border-0 text-white pr-0 mr-0">
+                                    <img src="./assets/search_icon.png" width="14px" alt="">
+                                </span>
+                            </div>
+                        </div>
+                    </form>                    
+                    <a href="/contactus.html" class="btn bg-orange d-none d-md-inline-block text-white px-4 rounded-pill ml-3 font-weight-bold">Contact us</a>
+                </div>            
+            </div>    
+        </div>
+    </header>
+    <!-- HEADER -->
+
+    <!-- HERO -->
+    <section aria-label="hero" class="my-0 bg-img" style="background-image: url(/assets/top_banner-fire.png);">
+        <!-- <img src="./assets/top_banner_bg.jpg" class="w-100" alt=""> -->
+        <div class="w-100 position-relative" style="top: 0px; left: 0px;">
+            <div class="container px-0">
+                <div class="row mx-0 justify-content-between align-items-center d-lg-flex d-none py-4">
+                    <div aria-label="left" class="position-relative">
+                        <a href="/homepage.html">
+                            <img src="/assets/aaochalo_header_logo.png" class="mr-1" alt="" width="120px">
+                        </a>
+                    </div>
+                    <div arial-label="right" class="d-none d-md-block">
+                        <a href="/homepage.html" class="btn text-white font-weight-bold hover-orange">Home</a>
+                        <div class="dropdown d-inline-block">
+                            <button class="btn px-0 py-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="btn text-white font-weight-bold hover-orange">Why Aao Chalo</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="/aboutus.html">Why Travel with us</a>
+                              <a class="dropdown-item" href="/nasir_and_farrah.html">About Nasir & Farrah</a>
+                              <a class="dropdown-item" href="/why_aao_chalo.html">Testimonials</a>
+                            </div>
+                        </div>                        
+                        <a href="/destinations.html" class="btn text-white font-weight-bold hover-orange">Destinations</a>
+                        <a href="/trekking.html" class="btn text-white font-weight-bold hover-orange">Trekking</a>
+                        <div class="dropdown d-inline-block">
+                            <button class="btn px-0 py-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="btn text-white font-weight-bold hover-orange">Expeditions</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="/expeditions.html">Below 6000m+</a>
+                              <a class="dropdown-item" href="/expeditions.html">6000m+</a>
+                              <a class="dropdown-item" href="/expeditions.html">7000m+</a>
+                              <a class="dropdown-item" href="/expeditions.html">8000m+</a>
+                            </div>
+                        </div>                        
+                        <a href="/tour_and_trips.html" class="btn text-white font-weight-bold hover-orange">Tour & Trips</a>
+                        <a href="/travellers.html" class="btn text-white font-weight-bold hover-orange">Travellers</a>
+                    </div>            
+                </div>
+                <div class="w100 py-5 my-0 my-md-5 text-center text-lg-left px-2 px-md-0" style="max-width: 50%">
+                    <!-- <p class="text-white mb-1 text-orange segeo-print-font">About Nasir & Farrah</p> -->
+                    <nav aria-label="breadcrumb" class="bg-transparent d-none d-md-block">
+                        <ol class="breadcrumb bg-transparent my-0 px-0">
+                          <li class="breadcrumb-item"><a class="text-white text-sm font-weight-bold" href="#">Tour & Trips</a></li>
+                          <li class="breadcrumb-item"><a class="text-white text-sm font-weight-bold" href="#">Festival</a></li>
+                          <li class="breadcrumb-item"><a class="text-white text-sm text-orange segeo-print-font" href="/trip_details.html">Bonfires at Baba Ghundi</a></li>
+                        </ol>
+                    </nav>                     
+                    <h2 class="font-weight-bold archivo-font text-white pb-md-5 mb-md-5 pb-4 mb-4">Trip Details to Bonfires at Baba Ghundi</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HERO -->
+
+    <section class="container bg-light pt-5 border-radius-5 translatey-md--110px px-4 text-center">
+        <div class="row mx-0 justify-content-center align-items-center">
+            <section class="container text-center text-md-left">
+                <h4 class="font-weight-bold text-aqua">Trip to Bonfires at Baba Ghundi</h4>
+            </section>                                
+        </div>
+    </section>      
+
+
+    <section class="container px-0 border-radius-5 translatey-md--110px px-4 py-2">          
+        <section class="text-left px-0" aria-label="section-title">
+            <div class="row mx-0 px-0 align-items-center">
+                <div class="col-md-5 px-0">
+                    <img src="./assets/Bonfiresat_baba_ghundi-fire.png" class="w-100" alt="">            
+                </div>                
+                <div class="col-md-7 text-center px-3 px-md-4 mt-0">
+                    <p class="text-left text-sm font-weight-normal text-light-grey" style="line-height: 200%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        
+                        when an unknown printer took a galley of type and scrambled it to make type
+                    .</p>
+                    <div class="row mx-0 justify-content-md-around justify-content-start py-2">
+                        <div class="col-md-4 col-6 px-0">
+                            <div class="d-flex w-100">
+                                <img src="/assets/days_icon.png" class="align-self-start" width="30px" alt="">
+                                <p class="ml-1 pb-0">
+                                    <span class="font-weight-bold text-sm">Duration</span><br>
+                                    <span class="text-light-grey tiny-text">4 Days</span>
+                                </p>
+                            </div>
+                        </div>                        
+                        <div class="col-md-4 col-6 px-0">
+                            <div class="d-flex w-100">
+                                <img src="/assets/suitable_for_icon.png" class="align-self-start" width="30px" alt="">
+                                <p class="ml-1 pb-0">
+                                    <span class="font-weight-bold text-sm">Sutiable For</span><br>
+                                    <span class="text-light-grey tiny-text">10+ People</span>
+                                </p>
+                            </div>
+                        </div>                        
+                        <div class="col-md-4 col-6 px-0">
+                            <div class="d-flex w-100">
+                                <img src="/assets/group_icon.png" class="align-self-start" width="30px" alt="">
+                                <p class="ml-1 pb-0">
+                                    <span class="font-weight-bold text-sm">Group size</span><br>
+                                    <span class="text-light-grey tiny-text">10 People</span>
+                                </p>
+                            </div>
+                        </div>  
+                        <div class="col-12 py-4 px-0">
+                            <div class="row mx-0">
+                                <div class="col-md-6">
+                                    <a href="" class="btn bg-orange text-white mx-2 px-5 my-2 font-weight-bold btn-block">Submit Query</a>  
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="" class="btn bg-whatsapp mx-2 text-white px-5 my-2 font-weight-bold btn-block">
+                                        <span class="d-flex align-items-center justify-content-center">
+                                            <span class="mdi mdi-whatsapp text-white mr-2"></span> 
+                                            <span>Submit</span>
+                                        </span>
+                                    </a>      
+                                </div>
+                            </div>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+        </section>     
+        <section class="my-4">
+            <div class="w-100">
+                <div class="col-xs-12">
+                    <nav class="mx-auto text-center w-100">
+                        <div class="nav nav-tabs nav-fill mx-0 w-100" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link border active mr-0 mr-md-1" id="nav-overview-tab" data-toggle="tab" href="#nav-overview" role="tab" aria-controls="nav-overview" aria-selected="true">Overview</a>
+                            <a class="nav-item nav-link mx-0 mx-md-1 border" id="nav-iternary-tab" data-toggle="tab" href="#nav-iternary" role="tab" aria-controls="nav-iternary" aria-selected="false">Iternary</a>
+                            <a class="nav-item nav-link mx-0 mx-md-1 border" id="nav-essential-tab" data-toggle="tab" href="#nav-essential" role="tab" aria-controls="nav-essential" aria-selected="false">Essential Info</a>
+                            <a class="nav-item nav-link mx-0 mx-md-1 border" id="nav-gallery-tab" data-toggle="tab" href="#nav-gallery" role="tab" aria-controls="nav-gallery" aria-selected="false">Gallery</a>
+                            <a class="nav-item nav-link mx-0 mx-md-1  border" id="nav-dateprice-tab" data-toggle="tab" href="#nav-dateprice" role="tab" aria-controls="nav-dateprice" aria-selected="false">Date & Price</a>
+                            <a class="nav-item nav-link ml-0 ml-md-1 border" id="nav-reviews-tab" data-toggle="tab" href="#nav-reviews" role="tab" aria-controls="nav-reviews" aria-selected="false">Reviews</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content bg-white p-4 border px-sm-0 transition w-100" style="border-radius: 0px 0px 10px 10px;" id="nav-tabContent">
+                        <div class="tab-pane fade show active  p-1 p-md-4" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab">
+                            <p class="text-dark-grey line-height-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate aspernatur est perferendis similique maxime, harum, odio perspiciatis iusto maiores eius in totam qui dolor doloribus atque veritatis debitis rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum nisi reprehenderit soluta quibusdam perferendis error tempore harum quos incidunt sint id amet aliquid, voluptatibus voluptas eius, modi facere dolore dolor? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus officiis ullam illo eius veniam laudantium aperiam eum. Adipisci, dolorem? Ad minus dicta, quibusdam libero dignissimos nisi. Ullam error excepturi inventore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet repellat inventore itaque nam rerum porro ab, voluptas tenetur similique aut impedit assumenda officiis fugit laboriosam. Asperiores quas maiores error nihil! lorem</p>
+                            <div class="row mx-auto justify-content-center bg-aqua-opaque p-2 p-md-4" style="border-radius: 10px;">
+                                <div class="col-md-12 text-center my-4">
+                                    <h4 class="text-black font-weight-bold">You Will Love this Trip</h4>
+                                </div>
+                                <div class="col-md-12">    
+                                    <section class="px-0">
+                                        <div class="row mx-0 px-0 justify-content-center flex-wrap flex-md-nowrap">    
+                                            <div class="mt-4 mx-2 mt-md-0 text-center p-2 p-md-3 mx-0 col-md-4" style="border-radius: 5px;">
+                                                <img src="./assets/premium_comfort_icon.png" width="50px" alt="">                
+                                                <h6 class="my-3 font-weight-bold text-black">PREMIUIM COMFORT</h6>
+                                                <p class="small text-black">Lorem ipsum dolor sit a ea incidunt libero voluptatum  atque perferendis</p> 
+                                            </div>    
+                                            <div class="mt-4 mx-2 mt-md-0 text-center p-2 p-md-3 mx-0 col-md-4" style="border-radius: 5px;">
+                                                <img src="./assets/premium_exp_icon.png" width="50px" alt="">                
+                                                <h6 class="my-3 font-weight-bold text-black">PREMIUM EXPERIENCES</h6>
+                                                <p class="small text-black">Lorem ipsum dolor sit a ea incidunt libero voluptatum  atque perferendis</p> 
+                                            </div>    
+                                            <div class="mt-4 mx-2 mt-md-0 text-center p-2 p-md-3 mx-0 col-md-4" style="border-radius: 5px;">
+                                                <img src="./assets/premium_towers_icon.png" width="50px" alt="">                
+                                                <h6 class="my-3 font-weight-bold text-black">PREMIUM TOURS</h6>
+                                                <p class="small text-black">Lorem ipsum dolor sit a ea incidunt libero voluptatum  atque perferendis</p> 
+                                            </div>      
+                                
+                                        </div>
+                                    </section>
+                            
+                                </div>
+                            </div>                        
+                        </div>
+                        <div class="tab-pane fade p-4 w-100" id="nav-iternary" role="tabpanel" aria-labelledby="nav-iternary-tab">
+                            <div class="accordion w-100" id="accordionExample" style="box-shadow: none">
+                                <div class="card bg-transparent mb-3" style="box-shadow: none; border: transparent; border-radius: 0; border-bottom: 0.5px solid rgba(0, 0, 0, 0.125);">
+                                    <div class="card-header border-0 px-0 py-0 bg-transparent" id="headingOne" >
+                                    <h6 class="mb-0">
+                                        <button class="btn text-left font-weight-bold w-100" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="w-100 d-flex justify-content-between">
+                                            <span>
+                                                <span class="mdi mdi-circle-medium mr-3"></span>
+                                                <span class="text-sm">DAY 1: Travel Safety and  </span>
+                                            </span>
+                                            <span class="mdi mdi-plus"></span>
+                                        </span>
+                                        </button>
+                                    </h6>
+                                    </div>
+                                    <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body text-sm font-weight-normal text-left">
+                                        <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, veniam nesciunt, sed dolorem, expedita mollitia magni asperiores nobis impedit ex quasi nam. Repellendus id exercitationem itaque placeat ad magnam tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deleniti molestias pariatur modi tenetur assumenda rem, maxime minima cum error nemo. Facilis doloribus nesciunt quas minus mollitia quo, voluptatibus et!</p>
+                                    </div>
+                                    </div>
+                                </div>                                                                         
+                                <div class="card bg-transparent mb-3" style="box-shadow: none; border: transparent; border-radius: 0; border-bottom: 0.5px solid rgba(0, 0, 0, 0.125);">
+                                <div class="card-header border-0 px-0 py-0 bg-transparent" id="headingTwo" >
+                                    <h6 class="mb-0">
+                                    <button class="btn text-left font-weight-bold w-100" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        <span class="w-100 d-flex justify-content-between">
+                                            <span>
+                                                <span class="mdi mdi-circle-medium mr-3"></span>
+                                                <span class="text-sm">DAY 1: Travel Safety and Advice</span>
+                                            </span>
+                                            <span class="mdi mdi-minus"></span>
+                                        </span>
+                                    </button>
+                                    </h6>
+                                </div>
+                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body text-sm font-weight-normal text-left">
+                                    <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, veniam nesciunt, sed dolorem, expedita mollitia magni asperiores nobis impedit ex quasi nam. Repellendus id exercitationem itaque placeat ad magnam tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deleniti molestias pariatur modi tenetur assumenda rem, maxime minima cum error nemo. Facilis doloribus nesciunt quas minus mollitia quo, voluptatibus et!</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="card bg-transparent mb-3" style="box-shadow: none; border: transparent; border-radius: 0; border-bottom: 0.5px solid rgba(0, 0, 0, 0.125);">
+                                    <div class="card-header border-0 px-0 py-0 bg-transparent" id="headingThree" >
+                                    <h6 class="mb-0">
+                                        <button class="btn text-left font-weight-bold w-100" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        <span class="w-100 d-flex justify-content-between">
+                                            <span>
+                                                <span class="mdi mdi-circle-medium mr-3"></span>
+                                                <span class="text-sm">DAY 2: Travellers Reviews</span>
+                                            </span>
+                                            <span class="mdi mdi-plus"></span>
+                                        </span>
+                                        </button>
+                                    </h6>
+                                    </div>
+                                    <div id="collapseThree" class="collapse hide" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body text-sm font-weight-normal text-left">
+                                        <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, veniam nesciunt, sed dolorem, expedita mollitia magni asperiores nobis impedit ex quasi nam. Repellendus id exercitationem itaque placeat ad magnam tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deleniti molestias pariatur modi tenetur assumenda rem, maxime minima cum error nemo. Facilis doloribus nesciunt quas minus mollitia quo, voluptatibus et!</p>
+                                    </div>
+                                    </div>
+                                </div> 
+                                <div class="card bg-transparent mb-3" style="box-shadow: none; border: transparent; border-radius: 0; border-bottom: 0.5px solid rgba(0, 0, 0, 0.125);">
+                                    <div class="card-header border-0 px-0 py-0 bg-transparent" id="headingFour" >
+                                    <h6 class="mb-0">
+                                        <button class="btn text-left font-weight-bold w-100" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        <span class="w-100 d-flex justify-content-between">
+                                            <span>
+                                                <span class="mdi mdi-circle-medium mr-3"></span>
+                                                <span class="text-sm">DAY 3: Recent Aao Chalo articles</span>
+                                            </span>
+                                            <span class="mdi mdi-plus"></span>
+                                        </span>
+                                        </button>
+                                    </h6>
+                                    </div>
+                                    <div id="collapseFour" class="collapse hide" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                    <div class="card-body text-sm font-weight-normal text-left">
+                                        <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, veniam nesciunt, sed dolorem, expedita mollitia magni asperiores nobis impedit ex quasi nam. Repellendus id exercitationem itaque placeat ad magnam tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deleniti molestias pariatur modi tenetur assumenda rem, maxime minima cum error nemo. Facilis doloribus nesciunt quas minus mollitia quo, voluptatibus et!</p>
+                                    </div>
+                                    </div>
+                                </div> 
+                                <div class="card bg-transparent mb-3" style="box-shadow: none; border: transparent; border-radius: 0; border-bottom: 0.5px solid rgba(0, 0, 0, 0.125);">
+                                    <div class="card-header border-0 px-0 py-0 bg-transparent" id="headingFive" >
+                                    <h6 class="mb-0">
+                                        <button class="btn text-left font-weight-bold w-100" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                        <span class="w-100 d-flex justify-content-between">
+                                            <span>
+                                                <span class="mdi mdi-circle-medium mr-3"></span>
+                                                <span class="text-sm">DAY 4: Travellers Reviews</span>
+                                            </span>
+                                            <span class="mdi mdi-plus"></span>
+                                        </span>
+                                        </button>
+                                    </h6>
+                                    </div>
+                                    <div id="collapseFive" class="collapse hide" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                    <div class="card-body text-sm font-weight-normal text-left">
+                                        <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, veniam nesciunt, sed dolorem, expedita mollitia magni asperiores nobis impedit ex quasi nam. Repellendus id exercitationem itaque placeat ad magnam tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deleniti molestias pariatur modi tenetur assumenda rem, maxime minima cum error nemo. Facilis doloribus nesciunt quas minus mollitia quo, voluptatibus et!</p>
+                                    </div>
+                                    </div>
+                                </div>                                                                                          
+                            </div>                          
+                        </div>
+                        <div class="tab-pane fade p-2 px-md-5 py-md-4 " id="nav-essential" role="tabpanel" aria-labelledby="nav-essential-tab">
+                            <h6 class="font-weight-bold text-dark">Eating and Drinking</h6>
+                            <p class="text-dark line-height-200 small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe minima perspiciatis, deserunt recusandae error quia ipsa aperiam nam praesentium. Veniam magni aperiam, blanditiis quod esse dicta consequuntur at nulla! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, nesciunt doloribus. Non reiciendis autem harum ad distinctio fugit tempore est officia. Aspernatur deserunt, praesentium ipsam nesciunt cumque dicta veniam adipisci! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quo dignissimos rerum sint a harum, nemo veniam tempore eum provident laudantium, blanditiis ad placeat sed nam est! Non, unde quia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil aspernatur ratione consectetur, est magni ipsum eveniet corrupti quisquam commodi. Quod modi libero eius eveniet incidunt! Facilis rem placeat cumque inventore.</p>
+                            <h6 class="font-weight-bold text-dark">Wheather</h6>
+                            <h6 class="font-weight-bold text-dark mt-3">Arang Khel for Next 7 Days</h6>
+                            <section class="bg-aqua-opaque p-md-4 p-2 border-radius-5 d-flex justify-content-center justify-content-md-start flex-md-nowrap flex-wrap">
+                                <section class="border-radius-5 text-dark mx-2 my-2 my-md-0" style="width: 120px; ">
+                                    <div class="text-center">
+                                        <div class="mx-0 px-3 py-2">
+                                            <p class="text-center mb-2 font-weight-bold text-sm">Today</p>
+                                            <div class="px-4 py-3 border-radius-5 position-relative">
+                                                <img src="./assets/sunny_wheather.png" width="30px" alt="">
+                                            </div>
+                                            <p class="text-center mt-2 mb-0 pb-0 font-weight-bold text-sm">
+                                                <span class="text-orange">07 &#176;</span> /
+                                                <span>10</span>
+                                            </p>
+                                        </div>                    
+                                    </div>                
+                                </section>   
+                                <section class="bg-white shadow border-radius-5 text-dark mx-2 my-2 my-md-0" style="width: 120px; ">
+                                    <div class="text-center">
+                                        <div class="mx-0 px-3 py-2">
+                                            <p class="text-center mb-2 font-weight-bold text-sm">Tue</p>
+                                            <div class="bg-light px-4 py-3 border-radius-5 position-relative">
+                                                <img src="./assets/snowy_weather.png" width="30px" alt="">
+                                                <span class="position-absolute small p-1 font-weight-bold" style="top: 0px; right: 0px;">70%</span>
+                                            </div>
+                                            <p class="text-center mt-2 mb-0 pb-0 font-weight-bold text-sm">
+                                                <span class="text-orange">07 &#176;</span> /
+                                                <span>10</span>
+                                            </p>
+                                        </div>                    
+                                    </div>                
+                                </section> 
+                                <section class="bg-white shadow border-radius-5 text-dark mx-2 my-2 my-md-0" style="width: 120px; ">
+                                    <div class="text-center">
+                                        <div class="mx-0 px-3 py-2">
+                                            <p class="text-center mb-2 font-weight-bold text-sm">Wed</p>
+                                            <div class="bg-light px-4 py-3 border-radius-5 position-relative">
+                                                <img src="./assets/snowy_weather.png" width="30px" alt="">
+                                                <span class="position-absolute small p-1 font-weight-bold" style="top: 0px; right: 0px;">70%</span>
+                                            </div>
+                                            <p class="text-center mt-2 mb-0 pb-0 font-weight-bold text-sm">
+                                                <span class="text-orange">07 &#176;</span> /
+                                                <span>10</span>
+                                            </p>
+                                        </div>                    
+                                    </div>                
+                                </section>  
+                                <section class="bg-white shadow border-radius-5 text-dark mx-2 my-2 my-md-0" style="width: 120px; ">
+                                    <div class="text-center">
+                                        <div class="mx-0 px-3 py-2">
+                                            <p class="text-center mb-2 font-weight-bold text-sm">Fri</p>
+                                            <div class="bg-light px-4 py-3 border-radius-5 position-relative">
+                                                <img src="./assets/snowy_weather.png" width="30px" alt="">
+                                                <span class="position-absolute small p-1 font-weight-bold" style="top: 0px; right: 0px;">70%</span>
+                                            </div>
+                                            <p class="text-center mt-2 mb-0 pb-0 font-weight-bold text-sm">
+                                                <span class="text-orange">07 &#176;</span> /
+                                                <span>10</span>
+                                            </p>
+                                        </div>                    
+                                    </div>                
+                                </section>  
+                                <section class="bg-white shadow border-radius-5 text-dark mx-2 my-2 my-md-0" style="width: 120px; ">
+                                    <div class="text-center">
+                                        <div class="mx-0 px-3 py-2">
+                                            <p class="text-center mb-2 font-weight-bold text-sm">Thur</p>
+                                            <div class="bg-light px-4 py-3 border-radius-5 position-relative">
+                                                <img src="./assets/snowy_weather.png" width="30px" alt="">
+                                                <span class="position-absolute small p-1 font-weight-bold" style="top: 0px; right: 0px;">70%</span>
+                                            </div>
+                                            <p class="text-center mt-2 mb-0 pb-0 font-weight-bold text-sm">
+                                                <span class="text-orange">07 &#176;</span> /
+                                                <span>10</span>
+                                            </p>
+                                        </div>                    
+                                    </div>                
+                                </section>  
+                                <section class="bg-white shadow border-radius-5 text-dark mx-2 my-2 my-md-0" style="width: 120px; ">
+                                    <div class="text-center">
+                                        <div class="mx-0 px-3 py-2">
+                                            <p class="text-center mb-2 font-weight-bold text-sm">Sat</p>
+                                            <div class="bg-light px-4 py-3 border-radius-5 position-relative">
+                                                <img src="./assets/snowy_weather.png" width="30px" alt="">
+                                                <span class="position-absolute small p-1 font-weight-bold" style="top: 0px; right: 0px;">70%</span>
+                                            </div>
+                                            <p class="text-center mt-2 mb-0 pb-0 font-weight-bold text-sm">
+                                                <span class="text-orange">07 &#176;</span> /
+                                                <span>10</span>
+                                            </p>
+                                        </div>                    
+                                    </div>                
+                                </section>  
+                                <section class="bg-white shadow border-radius-5 text-dark mx-2 my-2 my-md-0" style="width: 120px; ">
+                                    <div class="text-center">
+                                        <div class="mx-0 px-3 py-2">
+                                            <p class="text-center mb-2 font-weight-bold text-sm">Sun</p>
+                                            <div class="bg-light px-4 py-3 border-radius-5 position-relative">
+                                                <img src="./assets/snowy_weather.png" width="30px" alt="">
+                                                <span class="position-absolute small p-1 font-weight-bold" style="top: 0px; right: 0px;">70%</span>
+                                            </div>
+                                            <p class="text-center mt-2 mb-0 pb-0 font-weight-bold text-sm">
+                                                <span class="text-orange">07 &#176;</span> /
+                                                <span>10</span>
+                                            </p>
+                                        </div>                    
+                                    </div>                
+                                </section>                                   
+
+                            </section>
+                            <h6 class="font-weight-bold text-dark mt-4">Khel Wheather for Next 7 Days</h6>
+                            <section class="bg-aqua-opaque p-md-4 p-2 border-radius-5 d-flex justify-content-center justify-content-md-start flex-md-nowrap flex-wrap">
+                                <section class="border-radius-5 text-dark mx-2 my-2 my-md-0" style="width: 120px; ">
+                                    <div class="text-center">
+                                        <div class="mx-0 px-3 py-2">
+                                            <p class="text-center mb-2 font-weight-bold text-sm">Today</p>
+                                            <div class="px-4 py-3 border-radius-5 position-relative">
+                                                <img src="./assets/sunny_wheather.png" width="30px" alt="">
+                                            </div>
+                                            <p class="text-center mt-2 mb-0 pb-0 font-weight-bold text-sm">
+                                                <span class="text-orange">07 &#176;</span> /
+                                                <span>10</span>
+                                            </p>
+                                        </div>                    
+                                    </div>                
+                                </section>   
+                                <section class="bg-white shadow border-radius-5 text-dark mx-2 my-2 my-md-0" style="width: 120px; ">
+                                    <div class="text-center">
+                                        <div class="mx-0 px-3 py-2">
+                                            <p class="text-center mb-2 font-weight-bold text-sm">Tue</p>
+                                            <div class="bg-light px-4 py-3 border-radius-5 position-relative">
+                                                <img src="./assets/snowy_weather.png" width="30px" alt="">
+                                                <span class="position-absolute small p-1 font-weight-bold" style="top: 0px; right: 0px;">70%</span>
+                                            </div>
+                                            <p class="text-center mt-2 mb-0 pb-0 font-weight-bold text-sm">
+                                                <span class="text-orange">07 &#176;</span> /
+                                                <span>10</span>
+                                            </p>
+                                        </div>                    
+                                    </div>                
+                                </section> 
+                                <section class="bg-white shadow border-radius-5 text-dark mx-2 my-2 my-md-0" style="width: 120px; ">
+                                    <div class="text-center">
+                                        <div class="mx-0 px-3 py-2">
+                                            <p class="text-center mb-2 font-weight-bold text-sm">Wed</p>
+                                            <div class="bg-light px-4 py-3 border-radius-5 position-relative">
+                                                <img src="./assets/snowy_weather.png" width="30px" alt="">
+                                                <span class="position-absolute small p-1 font-weight-bold" style="top: 0px; right: 0px;">70%</span>
+                                            </div>
+                                            <p class="text-center mt-2 mb-0 pb-0 font-weight-bold text-sm">
+                                                <span class="text-orange">07 &#176;</span> /
+                                                <span>10</span>
+                                            </p>
+                                        </div>                    
+                                    </div>                
+                                </section>  
+                                <section class="bg-white shadow border-radius-5 text-dark mx-2 my-2 my-md-0" style="width: 120px; ">
+                                    <div class="text-center">
+                                        <div class="mx-0 px-3 py-2">
+                                            <p class="text-center mb-2 font-weight-bold text-sm">Fri</p>
+                                            <div class="bg-light px-4 py-3 border-radius-5 position-relative">
+                                                <img src="./assets/snowy_weather.png" width="30px" alt="">
+                                                <span class="position-absolute small p-1 font-weight-bold" style="top: 0px; right: 0px;">70%</span>
+                                            </div>
+                                            <p class="text-center mt-2 mb-0 pb-0 font-weight-bold text-sm">
+                                                <span class="text-orange">07 &#176;</span> /
+                                                <span>10</span>
+                                            </p>
+                                        </div>                    
+                                    </div>                
+                                </section>  
+                                <section class="bg-white shadow border-radius-5 text-dark mx-2 my-2 my-md-0" style="width: 120px; ">
+                                    <div class="text-center">
+                                        <div class="mx-0 px-3 py-2">
+                                            <p class="text-center mb-2 font-weight-bold text-sm">Thur</p>
+                                            <div class="bg-light px-4 py-3 border-radius-5 position-relative">
+                                                <img src="./assets/snowy_weather.png" width="30px" alt="">
+                                                <span class="position-absolute small p-1 font-weight-bold" style="top: 0px; right: 0px;">70%</span>
+                                            </div>
+                                            <p class="text-center mt-2 mb-0 pb-0 font-weight-bold text-sm">
+                                                <span class="text-orange">07 &#176;</span> /
+                                                <span>10</span>
+                                            </p>
+                                        </div>                    
+                                    </div>                
+                                </section>  
+                                <section class="bg-white shadow border-radius-5 text-dark mx-2 my-2 my-md-0" style="width: 120px; ">
+                                    <div class="text-center">
+                                        <div class="mx-0 px-3 py-2">
+                                            <p class="text-center mb-2 font-weight-bold text-sm">Sat</p>
+                                            <div class="bg-light px-4 py-3 border-radius-5 position-relative">
+                                                <img src="./assets/snowy_weather.png" width="30px" alt="">
+                                                <span class="position-absolute small p-1 font-weight-bold" style="top: 0px; right: 0px;">70%</span>
+                                            </div>
+                                            <p class="text-center mt-2 mb-0 pb-0 font-weight-bold text-sm">
+                                                <span class="text-orange">07 &#176;</span> /
+                                                <span>10</span>
+                                            </p>
+                                        </div>                    
+                                    </div>                
+                                </section>  
+                                <section class="bg-white shadow border-radius-5 text-dark mx-2 my-2 my-md-0" style="width: 120px; ">
+                                    <div class="text-center">
+                                        <div class="mx-0 px-3 py-2">
+                                            <p class="text-center mb-2 font-weight-bold text-sm">Sun</p>
+                                            <div class="bg-light px-4 py-3 border-radius-5 position-relative">
+                                                <img src="./assets/snowy_weather.png" width="30px" alt="">
+                                                <span class="position-absolute small p-1 font-weight-bold" style="top: 0px; right: 0px;">70%</span>
+                                            </div>
+                                            <p class="text-center mt-2 mb-0 pb-0 font-weight-bold text-sm">
+                                                <span class="text-orange">07 &#176;</span> /
+                                                <span>10</span>
+                                            </p>
+                                        </div>                    
+                                    </div>                
+                                </section>                                   
+
+                            </section>    
+                            <h6 class="font-weight-bold text-dark mt-4">Eating and Drinking</h6>
+                            <p class="text-dark line-height-200 small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe minima perspiciatis, deserunt recusandae error quia ipsa aperiam nam praesentium. Veniam magni aperiam, blanditiis quod esse dicta consequuntur at nulla! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, nesciunt doloribus. Non reiciendis autem harum ad distinctio fugit tempore est officia. Aspernatur deserunt, praesentium ipsam nesciunt cumque dicta veniam adipisci! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quo dignissimos rerum sint a harum, nemo veniam tempore eum provident laudantium, blanditiis ad placeat sed nam est! Non, unde quia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil aspernatur ratione consectetur, est magni ipsum eveniet corrupti quisquam commodi. Quod modi libero eius eveniet incidunt! Facilis rem placeat cumque inventore.</p>
+
+                        </div>
+                        <div class="tab-pane fade p-4" id="nav-gallery" role="tabpanel" aria-labelledby="nav-gallery-tab">
+                            <div class="row mx-auto justify-content-center">
+                                <div class="col-md-12">
+                                    <section class="px-0">
+                                        <div class="row mx-0 px-0 justify-content-center">    
+                                            <div class="p-2 my-2 col-md-4">               
+                                                <section class="position-relative" style="border-radius: 10px;">
+                                                    <div class="text-center">
+                                                        <img class="block mb-4" src="./assets/solo_image.png" width="100%" alt="">       
+                                                    </div>                
+                                                </section>
+                                            </div>    
+                                            <div class="p-2 my-2 col-md-4 ">               
+                                                <section class="position-relative" style="border-radius: 10px;">
+                                                    <div class="text-center">
+                                                        <img class="block mb-4" src="./assets/adult_image.png" width="100%" alt="">       
+                                                    </div>                
+                                                </section>
+                                            </div>    
+                                            <div class="p-2 my-2 col-md-4 ">               
+                                                <section class="position-relative" style="border-radius: 10px;">
+                                                    <div class="text-center">
+                                                        <img class="block mb-4" src="./assets/family_friendly_image.png" width="100%" alt="">       
+                                                    </div>                
+                                                </section>
+                                            </div>    
+                                            <div class="p-2 my-2 col-md-4 ">               
+                                                <section class="position-relative" style="border-radius: 10px;">
+                                                    <div class="text-center">
+                                                        <img class="block mb-4" src="./assets/women_image.png" width="100%" alt="">       
+                                                    </div>                
+                                                </section>
+                                            </div>      
+                                            <div class="p-2 my-2 col-md-4 ">               
+                                                <section class="position-relative" style="border-radius: 10px;">
+                                                    <div class="text-center">
+                                                        <img class="block mb-4" src="./assets/group_of_Family_image.png" width="100%" alt="">       
+                                                    </div>                
+                                                </section>
+                                            </div>                                                                                                 
+                                        </div>
+                                    </section>
+                            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade p-2 p-md-4 " id="nav-dateprice" role="tabpanel" aria-labelledby="nav-dateprice-tab">
+                            <div class="row mx-0">
+                                <div class="col-md-12 py-4 px-0">
+                                    <section class="px-0" style="overflow: auto;">
+                                        <table class="table table-striped mx-0 px-0">
+                                            <thead>
+                                                <td class="text-black text-center font-weight-bold">Start Date</td>
+                                                <td class="text-black text-center font-weight-bold">Finish Date</td>
+                                                <td class="text-black text-center font-weight-bold">Status</td>
+                                                <td class="text-black text-center font-weight-bold">Price <span class="small text-muted">(per person)</span></td>
+                                                <td></td>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td class="text-black text-center">May 18, 2021</td>
+                                                <td class="text-black py-4 text-center">May 24, 2021</td>
+                                                <td class="text-black py-4 text-center">Availability</td>
+                                                <td class="text-black py-4 text-center">Rs. 65000</td>
+                                                <td class=" py-4 text-center">
+                                                    <a href="#" class="py-1 px-4 text-success border-green font-weight-bold rounded-pill">
+                                                        BOOK NOW
+                                                    </a>
+                                                <td>
+
+                                            </tr>
+                                            <tr>
+                                                <td class="text-black text-center">May 18, 2021</td>
+                                                <td class="text-black py-4 text-center">May 24, 2021</td>
+                                                <td class="text-black py-4 text-center">Availability</td>
+                                                <td class="text-black py-4 text-center">Rs. 65000</td>
+                                                <td class=" py-4 text-center">
+                                                    <a href="#" class="py-1 px-4 text-success border-green font-weight-bold rounded-pill">
+                                                        BOOK NOW
+                                                    </a>
+                                                <td>
+
+                                            </tr>
+                                            <tr>
+                                                <td class="text-black text-center">May 18, 2021</td>
+                                                <td class="text-black py-4 text-center">May 24, 2021</td>
+                                                <td class="text-black py-4 text-center">Availability</td>
+                                                <td class="text-black py-4 text-center">Rs. 65000</td>
+                                                <td class=" py-4 text-center">
+                                                    <a href="#" class="py-1 px-4 text-success border-green font-weight-bold rounded-pill">
+                                                        BOOK NOW
+                                                    </a>
+                                                <td>
+
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </section>                            
+                                </div>
+                                <div class="col-md-10 mx-auto">
+                                    <section class="position-relative px-1 px-md-2 mx-0 py-5 bg-img border-radius-5" style="background-image: url(/assets/contactus_bg.png);">
+                                        <section class="text-center mb-4" aria-label="what-you-can-do-with-us-title">
+                                            <h4 class="font-weight-bold text-dark">Book a Private/Customized Adventure!</h4>
+                                            <p class="text-dark">Contact us for customized attornaties and departure dates!</p>
+                                            <a href="" class="btn bg-aqua text-white px-4">Contact us</a>
+                                        </section>                                
+                                    </section>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade p-2 p-md-4" id="nav-reviews" role="tabpanel" aria-labelledby="nav-reviews-tab">
+                            <section class="mt-4">
+                                <div class="row border-bottom mx-1 mx-md-3 justify-content-md-around py-2">
+                                    <div class="col-md-6 px-0">
+                                        <div class="d-flex w-100">
+                                            <i><img src="./assets/clipped_image.png" width="50px" alt=""></i>
+                                            <p class="ml-2">
+                                                <span class="font-weight-bold text-sm text-aqua">Alizah Shah</span><br>
+                                                <span class="text-light-grey tiny-text">11 March 2021</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-right d-none d-md-block">
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                    </div>
+                                    <p class="line-height-200 mt-4 text-sm text-light-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, dignissimos iure similique delectus neque nostrum expedita enim totam iusto consequatur rem a optio recusandae vero quae. Sunt earum atque eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem vero asperiores adipisci, possimus veritatis repellendus recusandae, quibusdam totam facilis consequatur molestias autem perferendis cum porro, quia provident eum magnam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, vero, sint dolore corrupti eveniet, eius voluptas nihil soluta tempore veritatis porro temporibus. Qui eos repellendus sapiente, amet assumenda quasi delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, atque tenetur? Labore et delectus animi, rem sapiente nobis earum tenetur consequuntur nesciunt ducimus incidunt molestiae aliquam possimus quasi veniam reprehenderit.</p>
+                                </div>            
+                            </section>
+                            <section class="mt-4">
+                                <div class="row border-bottom mx-1 mx-md-3 justify-content-md-around py-2">
+                                    <div class="col-md-6 px-0">
+                                        <div class="d-flex w-100">
+                                            <i><img src="./assets/clipped_image.png" width="50px" alt=""></i>
+                                            <p class="ml-2">
+                                                <span class="font-weight-bold text-sm text-aqua">Alizah Shah</span><br>
+                                                <span class="text-light-grey tiny-text">11 March 2021</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-right d-none d-md-block">
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                    </div>
+                                    <p class="line-height-200 mt-4 text-sm text-light-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, dignissimos iure similique delectus neque nostrum expedita enim totam iusto consequatur rem a optio recusandae vero quae. Sunt earum atque eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem vero asperiores adipisci, possimus veritatis repellendus recusandae, quibusdam totam facilis consequatur molestias autem perferendis cum porro, quia provident eum magnam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, vero, sint dolore corrupti eveniet, eius voluptas nihil soluta tempore veritatis porro temporibus. Qui eos repellendus sapiente, amet assumenda quasi delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, atque tenetur? Labore et delectus animi, rem sapiente nobis earum tenetur consequuntur nesciunt ducimus incidunt molestiae aliquam possimus quasi veniam reprehenderit.</p>
+                                </div>            
+                            </section>
+                            <section class="mt-4">
+                                <div class="row border-bottom mx-1 mx-md-3 justify-content-md-around py-2">
+                                    <div class="col-md-6 px-0">
+                                        <div class="d-flex w-100">
+                                            <i><img src="./assets/clipped_image.png" width="50px" alt=""></i>
+                                            <p class="ml-2">
+                                                <span class="font-weight-bold text-sm text-aqua">Alizah Shah</span><br>
+                                                <span class="text-light-grey tiny-text">11 March 2021</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-right d-none d-md-block">
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                    </div>
+                                    <p class="line-height-200 mt-4 text-sm text-light-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, dignissimos iure similique delectus neque nostrum expedita enim totam iusto consequatur rem a optio recusandae vero quae. Sunt earum atque eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem vero asperiores adipisci, possimus veritatis repellendus recusandae, quibusdam totam facilis consequatur molestias autem perferendis cum porro, quia provident eum magnam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, vero, sint dolore corrupti eveniet, eius voluptas nihil soluta tempore veritatis porro temporibus. Qui eos repellendus sapiente, amet assumenda quasi delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, atque tenetur? Labore et delectus animi, rem sapiente nobis earum tenetur consequuntur nesciunt ducimus incidunt molestiae aliquam possimus quasi veniam reprehenderit.</p>
+                                </div>            
+                            </section>
+                            <section class="mt-4">
+                                <div class="row border-bottom mx-1 mx-md-3 justify-content-md-around py-2">
+                                    <div class="col-md-6 px-0">
+                                        <div class="d-flex w-100">
+                                            <i><img src="./assets/clipped_image.png" width="50px" alt=""></i>
+                                            <p class="ml-2">
+                                                <span class="font-weight-bold text-sm text-aqua">Alizah Shah</span><br>
+                                                <span class="text-light-grey tiny-text">11 March 2021</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-right d-none d-md-block">
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                        <a href="" class="mdi mdi-star mdi-24px text-warning"></a>
+                                    </div>
+                                    <p class="line-height-200 mt-4 text-sm text-light-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, dignissimos iure similique delectus neque nostrum expedita enim totam iusto consequatur rem a optio recusandae vero quae. Sunt earum atque eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem vero asperiores adipisci, possimus veritatis repellendus recusandae, quibusdam totam facilis consequatur molestias autem perferendis cum porro, quia provident eum magnam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, vero, sint dolore corrupti eveniet, eius voluptas nihil soluta tempore veritatis porro temporibus. Qui eos repellendus sapiente, amet assumenda quasi delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, atque tenetur? Labore et delectus animi, rem sapiente nobis earum tenetur consequuntur nesciunt ducimus incidunt molestiae aliquam possimus quasi veniam reprehenderit.</p>
+                                </div>            
+                            </section>                                                        
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </section>                
+    </section>
+    <section class="container-fluid position-relative px-0 mx-0 bg-img" style="background-image: url(/assets/adventure_bg.png);">
+        <div class="container px-0 py-5">
+            <div class="row mx-auto justify-content-center">
+                <div class="col-md-12">
+                    <section class="container px-0 text-center mb-2 mb-md-4 mt-5">
+                        <div class="row mx-0 justify-content-center align-items-center">
+                            <section class="container text-center mb-4" aria-label="what-you-can-do-with-us-title">
+                                <h4 class="font-weight-bold text-aqua">RELATED TOURS</h4>
+                                <img src="./assets/namelines.png" width="160px" alt="">
+                            </section>                                
+                        </div>
+                    </section>      
+                    <section class="px-0">
+                        <div class="row mx-0 px-0">    
+                            <div class="col-md-4 px-4 my-4 ">               
+                                <section class="bg-white shadow position-relative" style="border-radius: 10px;">
+                                    <div class="text-center">
+                                        <img class="block mb-4" src="./assets/trips_tour_Card1.png" width="100%" alt="">       
+                                        <section class="py-4 position-absolute w-100 text-center"  style="top: 0px; left: 0px;">
+                                            <h5 class="text-sm mb-0 font-weight-bold text-white">Islamabad to Skardu</h5>
+                                            <div class="w-25 border-bottom mx-auto py-1 border-2"></div>
+                                        </section>                
+                                        <div class="row border-top mx-3 justify-content-around py-2">
+                                            <div class="col-6 px-0">
+                                                <div class="d-flex w-100">
+                                                    <i class="mdi mdi-account-group text-aqua"></i>
+                                                    <p class="ml-1">
+                                                        <span class="font-weight-bold text-sm">Group size</span><br>
+                                                        <span class="text-light-grey tiny-text">7 Days/ 6 Nights</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 px-0">
+                                                <div class="d-flex w-100">
+                                                    <i class="mdi mdi-script text-aqua"></i>
+                                                    <p class="ml-1">
+                                                        <span class="font-weight-bold text-sm">Duration</span><br>
+                                                        <span class="text-light-grey tiny-text">4 Days</span>
+                                                    </p>
+                                                </div>
+                                            </div> 
+                                            <div class="col-12 d-flex mx-0 align-items-center  pt-2 mb-2 px-0 justify-content-around">
+                                                <strong class="font-weight-bold text-sm my-0 py-0 flex-shrink-0">6,000 Rs</strong>
+                                                <a href="" class="btn bg-orange text-sm py-1 text-white px-4 font-weight-bold">View Details</a>                    
+                                            </div>
+                                        </div>    
+                    
+                                    </div>                
+                                </section>
+                            </div>    
+                            <div class="col-md-4 px-4 my-4 ">               
+                                <section class="bg-white shadow position-relative" style="border-radius: 10px;">
+                                    <div class="text-center">
+                                        <img class="block mb-4" src="./assets/trips_tour_Card2.png" width="100%" alt="">       
+                                        <section class="py-4 position-absolute w-100 text-center"  style="top: 0px; left: 0px;">
+                                            <h5 class="text-sm mb-0 font-weight-bold text-white">Islamabad to Shandoor</h5>
+                                            <div class="w-25 border-bottom mx-auto py-1 border-2"></div>
+                                        </section>                
+                                        <div class="row border-top mx-3 justify-content-around py-2">
+                                            <div class="col-6 px-0">
+                                                <div class="d-flex w-100">
+                                                    <i class="mdi mdi-account-group text-aqua"></i>
+                                                    <p class="ml-1">
+                                                        <span class="font-weight-bold text-sm">Group size</span><br>
+                                                        <span class="text-light-grey tiny-text">7 Days/ 6 Nights</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 px-0">
+                                                <div class="d-flex w-100">
+                                                    <i class="mdi mdi-script text-aqua"></i>
+                                                    <p class="ml-1">
+                                                        <span class="font-weight-bold text-sm">Duration</span><br>
+                                                        <span class="text-light-grey tiny-text">4 Days</span>
+                                                    </p>
+                                                </div>
+                                            </div> 
+                                            <div class="col-12 d-flex mx-0 align-items-center pt-2 mb-2 px-0 justify-content-around">
+                                                <strong class="font-weight-bold text-sm my-0 py-0 flex-shrink-0">6,000 Rs</strong>
+                                                <a href="" class="btn bg-orange text-sm py-1 text-white px-4 font-weight-bold">View Details</a>                    
+                                            </div>
+                                        </div>    
+                    
+                                    </div>                
+                                </section>
+                            </div>    
+                            <div class="col-md-4 px-4 my-4 ">               
+                                <section class="bg-white shadow position-relative" style="border-radius: 10px;">
+                                    <div class="text-center">
+                                        <img class="block mb-4" src="./assets/trips_tour_Card3.png" width="100%" alt="">       
+                                        <section class="py-4 position-absolute w-100 text-center"  style="top: 0px; left: 0px;">
+                                            <h5 class="text-sm mb-0 font-weight-bold text-white">Islamabad to Swat</h5>
+                                            <div class="w-25 border-bottom mx-auto py-1 border-2"></div>
+                                        </section>                
+                                        <div class="row border-top mx-3 justify-content-around py-2">
+                                            <div class="col-6 px-0">
+                                                <div class="d-flex w-100">
+                                                    <i class="mdi mdi-account-group text-aqua"></i>
+                                                    <p class="ml-1">
+                                                        <span class="font-weight-bold text-sm">Group size</span><br>
+                                                        <span class="text-light-grey tiny-text">7 Days/ 6 Nights</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 px-0">
+                                                <div class="d-flex w-100">
+                                                    <i class="mdi mdi-script text-aqua"></i>
+                                                    <p class="ml-1">
+                                                        <span class="font-weight-bold text-sm">Duration</span><br>
+                                                        <span class="text-light-grey tiny-text">4 Days</span>
+                                                    </p>
+                                                </div>
+                                            </div> 
+                                            <div class="col-12 d-flex mx-0 align-items-center pt-2 mb-2 px-0 justify-content-around">
+                                                <strong class="font-weight-bold text-sm my-0 py-0 flex-shrink-0">6,000 Rs</strong>
+                                                <a href="" class="btn bg-orange text-sm py-1 text-white px-4 font-weight-bold">View Details</a>                    
+                                            </div>
+                                        </div>    
+                    
+                                    </div>                
+                                </section>
+                            </div>    
+                            <div class="col-md-4 px-4 my-4 ">               
+                                <section class="bg-white shadow position-relative" style="border-radius: 10px;">
+                                    <div class="text-center">
+                                        <img class="block mb-4" src="./assets/trips_tour_Card4.png" width="100%" alt="">       
+                                        <section class="py-4 position-absolute w-100 text-center"  style="top: 0px; left: 0px;">
+                                            <h5 class="text-sm mb-0 font-weight-bold text-white">Islamabad to Chitral</h5>
+                                            <div class="w-25 border-bottom mx-auto py-1 border-2"></div>
+                                        </section>                
+                                        <div class="row border-top mx-3 justify-content-around py-2">
+                                            <div class="col-6 px-0">
+                                                <div class="d-flex w-100">
+                                                    <i class="mdi mdi-account-group text-aqua"></i>
+                                                    <p class="ml-1">
+                                                        <span class="font-weight-bold text-sm">Group size</span><br>
+                                                        <span class="text-light-grey tiny-text">7 Days/ 6 Nights</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 px-0">
+                                                <div class="d-flex w-100">
+                                                    <i class="mdi mdi-script text-aqua"></i>
+                                                    <p class="ml-1">
+                                                        <span class="font-weight-bold text-sm">Duration</span><br>
+                                                        <span class="text-light-grey tiny-text">4 Days</span>
+                                                    </p>
+                                                </div>
+                                            </div> 
+                                            <div class="col-12 d-flex mx-0 align-items-center pt-2 mb-2 px-0 justify-content-around">
+                                                <strong class="font-weight-bold text-sm my-0 py-0 flex-shrink-0">6,000 Rs</strong>
+                                                <a href="" class="btn border-orange text-sm py-1 text-orange px-4 font-weight-bold">View Details</a>                    
+                                            </div>
+                                        </div>    
+                    
+                                    </div>                
+                                </section>
+                            </div>    
+                
+                        </div>
+                    </section>
+            
+                </div>
+            </div>
+        </div>
+    </section>      
+
+
+
+    <a href="#" class="float">
+        <i class="mdi mdi-chat-processing-outline mdi-36px text-orange my-float"></i>
+    </a>
+    <footer class="position-relative bg-image bg-footer">
+        <div class="w-100 py-4">
+            <div class="container px-0 py-5">
+                <div class="row mx-0">
+                    <div class="col-md-3 mt-md-0 mt-4">
+                        <a href="" class="btn text-light-grey px-1"><img src="./assets/footer_logo.png" alt="" width="100%"></a>
+                        <div>
+                            <a href="" class="btn text-light-grey px-1"><img src="./assets/facebook_icon.png" alt="" width="30px"></a>
+                            <a href="" class="btn text-light-grey px-1"><img src="./assets/instagram_icon.png" alt="" width="30px"></a>
+                            <a href="" class="btn text-light-grey px-1"><img src="./assets/twitter_icon.png" alt="" width="30px"></a>
+                            <a href="" class="btn text-light-grey px-1"><img src="./assets/youtube_icon.png" alt="" width="30px"></a>                                
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-md-0 mt-4">
+                        <h5 class="text-white font-weight-bold green-left-border py-2 border-bottom border-2 mb-4">Quick Links</h5>
+                        <a href="/homepage.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Home</a>
+                        <a href="/why_aao_chalo.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Why aao Chalo</a>
+                        <a href="/destinations.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Destinations</a>
+                        <a href="/trekking_and_expeditions.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Trekking & Expeditions</a>
+                        <a href="/tour_and_trips.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Tours & Trips</a>
+                        <a href="/adventures.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Adventures</a>
+                    </div>
+                    <div class="col-md-3 mt-md-0 mt-4">
+                        <h5 class="text-white font-weight-bold green-left-border py-2 border-bottom border-2 mb-4">Other Links</h5>
+                        <a href="/travel_advisory_whethercondition.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Travel Advisory</a>
+                        <a href="/broucher.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Brouchers</a>
+                        <a href="/blogpage.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Blogs</a>
+                        <a href="/vlogs.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Vlog's</a>
+                        <a href="/tour_and_trips.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Tours & Trips</a>
+                        <a href="/image_gallery.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Media Gallery</a>
+                        <a href="/contactus.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Contact us</a>
+                    </div>
+
+                    <div class="col-md-3 mt-md-0 mt-4">
+                        <h5 class="text-white font-weight-bold green-left-border py-2 border-bottom border-2 mb-4">Other Links</h5>
+                        <p class="text-sm text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima unde</p>
+                        <form class="mb-0">
+                            <div class="input-group bg-white">
+                                <input type="text" class="form-control font-weight-bold text-white border-radius-0 border-0 py-0 tiny-text" placeholder="Enter your search here">
+                                <div class="input-group-append">
+                                    <span class="input-group-text bg-orange border-0 text-white" style="border-radius: 0px;">
+                                        <img src="./assets/search_icon.png" width="14px" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                        </form>                        
+                    </div>    
+                </div>
+                <div class="row mx-0 mt-4 hr pt-4">
+                    <div class="col-6 text-left">
+                        <p class="text-white">2021 Decimal Solutions. All rights reserved</p>
+                    </div>
+                    <div class="col-6 text-right text-white">
+                        <a href="/faq.html" class="text-white">FAQ</a>       
+                        <span class="mx-2">|</span>                 
+                        <a href="/support.html" class="text-white">Support</a>       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+</html>

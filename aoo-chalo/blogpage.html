@@ -1,0 +1,500 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.jqueryui.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">   -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="./style.css?v1.1">
+    <link rel="stylesheet" href="./color.css">
+
+    <title>Blog Post Page</title>
+</head>
+<body class="bg-light">
+
+    <!-- MOBILE VIEW CODE -->
+    <section class="d-block d-lg-none">
+
+        <div id="mySidenav" class="sidenav bg-dark-blue" style="z-index: 5000;">
+            <a href="javascript:void(0)" class="closebtn text-white" onclick="closeNav()">&times;</a>
+            <a href="/why_aao_chalo.html" class="btn btn-block text-white text-left text-sm">Why Aao Chalo</a>
+            <a href="/destinations.html" class="btn btn-block text-white text-left text-sm">Destinations</a>
+            <a href="/trekking.html" class="btn btn-block text-white text-left text-sm">Trekking</a>
+            <a href="/expeditions.html" class="btn btn-block text-white text-left text-sm">Expeditions</a>
+            <a href="/tour_and_trips.html" class="btn btn-block text-white text-left text-sm">Tour & Trips</a>
+            <a href="/travellers.html" class="btn btn-block text-white text-left text-sm">Travellers</a>
+        </div>            
+        <header class="d-flex justify-content-between between py-2 px-2 bg-dark-blue align-items-center position-relative">
+            <a href="javascript:void(0)" onclick="openNav()" class="btn mdi mdi-menu text-white"></a>
+            <a href="/homepage.html"><img src="/assets/aaochalo_header_logo.png" width="60px" alt=""></a>
+            <div>
+                <a href="#" onclick="showSmSearchField()" class="mdi mdi-magnify mx-2 text-white"></a>
+                <!-- <a href="#" class="mdi mdi-download mx-2 text-white"></a> -->
+                <form action="/faq.html" id="search-field-sm" class="position-absolute mb-0 bg-dark-blue h-100 d-none w-100" style="top: 0px; left: 0px;">
+                    <div class="input-group">
+                        <div class="input-group-prepend mr-3">
+                            <span onclick="hideSmSearchField()" class="input-group-text bg-transparent border-0 text-white mdi mdi-chevron-left text-white"></span>
+                        </div>
+                        <input type="text" class="form-control px-0 border-radius-0 border-0 text-white" placeholder="What are you looking for..." >
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent border-0 text-white mdi mdi-magnify text-white"></span>
+                        </div>
+                    </div>
+                </form>                     
+            </div>
+        </header>
+
+    </section>
+    <!-- MOBILE VIEW CODE -->
+    <!-- HEADER -->    
+
+    <!-- HEADER -->
+    <header aria-label="top-header" class="container-fluid text-white bg-dark-blue py-4 shadow d-lg-block d-none my-0">
+        <div class="container">
+            <div class="row mx-0 justify-content-between align-items-center">
+                <div arial-label="left">
+                    <span class="text-sm mr-2 font-weight-bold">
+                        <img src="./assets/call_icon.png" class="mr-1" width="22px" alt="">
+                        +91 332 543 4567
+                    </span>
+                    <span class="text-sm mx-2 d-none d-md-inline-block ">
+                        <a href="/travel_advisory_whethercondition.html" class="text-white font-weight-bold">Travel Advisory</a>
+                    </span>
+                    <span class="text-sm mx-2 d-none d-md-inline-block ">
+                        <a href="/broucher.html" class="text-white font-weight-bold">Brouchers</a>
+                    </span>
+                </div>
+                <div arial-label="right">
+                    <span class="text-sm mr-2 d-none d-md-inline-block ">
+                        <a href="/blogpage.html" class="text-white font-weight-bold">Traveller's Blog</a>
+                    </span>
+                    <form class="d-inline-block ml-4 mb-0">
+                        <div class="input-group border-bottom">
+                            <input type="text" class="form-control font-weight-bold px-0 text-white border-radius-0 border-0 py-0" value="Search" style="max-width: 50px;">
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-transparent border-0 text-white pr-0 mr-0">
+                                    <img src="./assets/search_icon.png" width="14px" alt="">
+                                </span>
+                            </div>
+                        </div>
+                    </form>                    
+                    <a href="/contactus.html" class="btn bg-orange d-none d-md-inline-block text-white px-4 rounded-pill ml-3 font-weight-bold">Contact us</a>
+                </div>            
+            </div>    
+        </div>
+    </header>
+    <!-- HEADER -->
+
+    <!-- HERO -->
+    <section aria-label="hero" class="my-0 bg-img" style="background-image: url(/assets/top_banner-blog.png);">
+        <!-- <img src="./assets/top_banner_bg.jpg" class="w-100" alt=""> -->
+        <div class="w-100 position-relative" style="top: 0px; left: 0px;">
+            <div class="container px-0">
+                <div class="row mx-0 justify-content-between align-items-center d-lg-flex d-none py-4">
+                    <div aria-label="left" class="position-relative">
+                        <a href="/homepage.html">
+                            <img src="/assets/aaochalo_header_logo.png" class="mr-1" alt="" width="120px">
+                        </a>
+                    </div>
+                    <div arial-label="right" class="d-none d-md-block">
+                        <a href="/homepage.html" class="btn text-white font-weight-bold hover-orange">Home</a>
+                        <div class="dropdown d-inline-block">
+                            <button class="btn px-0 py-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="btn text-white font-weight-bold hover-orange">Why Aao Chalo</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="/aboutus.html">Why Travel with us</a>
+                              <a class="dropdown-item" href="/nasir_and_farrah.html">About Nasir & Farrah</a>
+                              <a class="dropdown-item" href="/why_aao_chalo.html">Testimonials</a>
+                            </div>
+                        </div>                        
+                        <a href="/destinations.html" class="btn text-white font-weight-bold hover-orange">Destinations</a>
+                        <a href="/trekking.html" class="btn text-white font-weight-bold hover-orange">Trekking</a>
+                        <div class="dropdown d-inline-block">
+                            <button class="btn px-0 py-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="btn text-white font-weight-bold hover-orange">Expeditions</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="/expeditions.html">Below 6000m+</a>
+                              <a class="dropdown-item" href="/expeditions.html">6000m+</a>
+                              <a class="dropdown-item" href="/expeditions.html">7000m+</a>
+                              <a class="dropdown-item" href="/expeditions.html">8000m+</a>
+                            </div>
+                        </div>                        
+                        <a href="/tour_and_trips.html" class="btn text-white font-weight-bold hover-orange">Tour & Trips</a>
+                        <a href="/travellers.html" class="btn text-white font-weight-bold hover-orange">Travellers</a>
+                    </div>            
+                </div>
+                <div class="w100 py-5 my-0 my-md-5 text-center text-lg-left px-2 px-md-0" style="max-width: 700px;">
+                    <nav aria-label="breadcrumb" class="bg-transparent d-none d-md-block">
+                        <ol class="breadcrumb bg-transparent my-0 px-0">
+                          <li class="breadcrumb-item"><a class="text-white text-sm font-weight-bold" href="#">Safar Namay</a></li>
+                          <li class="breadcrumb-item"><a class="text-white text-sm text-orange segeo-print-font" href="#">Articles / Blogs</a></li>
+                        </ol>
+                    </nav>                    
+                    <h1 class="font-weight-bold archivo-font text-white">Best Place to Travel Around In the World</h1>
+                    <div class="w-100 mb-0 mb-md-5">
+                        <a href="#" class="btn text-white px-4 my-3 py-1 text-sm hover-white" style="border: 1.5px solid white;">Read More...</a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HERO -->
+    
+    
+    <div class="container-fluid px-0 bg-img bg-blog">
+
+        <section class="container translatey-md--110 d-none d-md-block bg-img bg-blog">
+            <div class="row mx-0 justify-content-around flex-md-nowrap flex-wrap align-items-center px-4 py-4" style="border-radius: 5px;">
+                <a class="text-orange font-weight-bold text-center col-md-3 hover-orange py-2" href="/blogpage.html">Articles / Blogs</a>
+                <a class="text-light-grey col-md-3 text-center border-md-left hover-orange py-2" href="/vlogs.html">Aao Chalo V'logs</a>
+                <a class="text-light-grey col-md-3 text-center border-md-left hover-orange py-2" href="/image_gallery.html">Media Gallery</a>
+            </div>
+        </section>  
+        <section class="container">
+            <div class="row mx-0 justify-content-center">
+                <form class="mb-0 col-md-7 d-none d-md-block">
+                    <div class="input-group bg-white border-radius-5" style="border: 2px solid rgba(0, 0, 0, 0.225)">
+                        <input type="text" class="form-control font-weight-bold py-2 text-white" placeholder="Enter your search here">
+                        <div class="input-group-append">
+                            <span class="input-group-text font-weight-bold bg-orange border-0 text-white px-4" style="border-radius: 0px;">
+                                Search
+                            </span>
+                        </div>
+                    </div>
+                </form>                 
+            </div>   
+            
+            <div class="row mx-0 my-0 my-md-5">
+                <div class="col-md-8 px-0">
+                    <div class="row mx-0">
+                        <div class="col-md-6 my-3">
+                            <section class="bg-white shadow" style="border-radius: 10px;">
+                                <div class="position-relative text-center">
+                                    <img class="block mb-2" src="./assets/seasons_trips_image.png" width="100%" alt="">       
+                                    <section class="py-4 position-absolute w-100 text-left"  style="bottom: 20px; left: 20px;">
+                                        <h5 class="text-sm mb-0 font-weight-bold text-white">Best Places in Swat</h5>
+                                        <div class="w-25 border-bottom py-1 border-2"></div>
+                                    </section>
+                                </div>                
+                                <div class="px-3 py-3 text-center">
+                                    <div class="row mx-0 mb-3">
+                                        <a class="col-md-6 px-0 text-left">
+                                            <span class="mdi mdi-script text-aqua"></span>
+                                            <i class="text-sm text-light-grey ml-1">27 April 2021</i>
+                                        </a>
+                                        <a class="col-md-6 px-0 text-left">
+                                            <span class="mdi mdi-tag-multiple text-aqua"></span>
+                                            <i class="text-sm text-light-grey ml-1">27 April 2021</i>
+                                        </a>
+                                    </div>
+                                    <p class="text-left text-sm line-height-200"> pariatur veniam ea itaque omnis esse deserunt aliquam voluptatum ratione ipsa ipsum iusto, quasi delectus nostrum eaque dicta!</p>                                            
+                                    <a href="#" class="btn text-orange border-orange px-4 text-sm py-1">Read More</a>                                    
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <section class="bg-white shadow" style="border-radius: 10px;">
+                                <div class="position-relative text-center">
+                                    <img class="block mb-2" src="./assets/image_2_punjab.png" width="100%" alt="">       
+                                    <section class="py-4 position-absolute w-100 text-left"  style="bottom: 20px; left: 20px;">
+                                        <h5 class="text-sm mb-0 font-weight-bold text-white">6 Traditional Pakistan dishes to Eat in 2021</h5>
+                                        <div class="w-25 border-bottom py-1 border-2"></div>
+                                    </section>
+                                </div>                
+                                <div class="px-3 py-3 text-center">
+                                    <div class="row mx-0 mb-3">
+                                        <a class="col-md-6 px-0 text-left">
+                                            <span class="mdi mdi-script text-aqua"></span>
+                                            <i class="text-sm text-light-grey ml-1">27 April 2021</i>
+                                        </a>
+                                        <a class="col-md-6 px-0 text-left">
+                                            <span class="mdi mdi-tag-multiple text-aqua"></span>
+                                            <i class="text-sm text-light-grey ml-1">27 April 2021</i>
+                                        </a>
+                                    </div>
+                                    <p class="text-left text-sm line-height-200"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit provident culpa illum totam, obcaecati officia illo voluptas eum numquam odio debitis corrupti adipisci soluta vero iure in modi nihil omnis. pariatur veniam ea itaque omnis esse deserunt aliquam voluptatum ratione ipsa ipsum iusto, quasi delectus nostrum eaque dicta!</p>                                            
+                                    <a href="#" class="btn bg-orange text-white px-4 text-sm py-1">Read More</a>                                    
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <section class="bg-white shadow" style="border-radius: 10px;">
+                                <div class="position-relative text-center">
+                                    <img class="block mb-2" src="./assets/festival_trip_image.png" width="100%" alt="">       
+                                    <section class="py-4 position-absolute w-100 text-left"  style="bottom: 20px; left: 20px;">
+                                        <h5 class="text-sm mb-0 font-weight-bold text-white">The 10 Most Interesting Building in Pakistan</h5>
+                                        <div class="w-25 border-bottom py-1 border-2"></div>
+                                    </section>
+                                </div>                
+                                <div class="px-3 py-3 text-center">
+                                    <div class="row mx-0 mb-3">
+                                        <a class="col-md-6 px-0 text-left">
+                                            <span class="mdi mdi-script text-aqua"></span>
+                                            <i class="text-sm text-light-grey ml-1">27 April 2021</i>
+                                        </a>
+                                        <a class="col-md-6 px-0 text-left">
+                                            <span class="mdi mdi-tag-multiple text-aqua"></span>
+                                            <i class="text-sm text-light-grey ml-1">27 April 2021</i>
+                                        </a>
+                                    </div>
+                                    <p class="text-left text-sm line-height-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et similique corporis in pariatur veniam ea itaque omnis esse deserunt aliquam voluptatum ratione ipsa ipsum iusto, quasi delectus nostrum eaque dicta!</p>                                            
+                                    <a href="#" class="btn bg-orange text-white px-4 text-sm py-1">Read More</a>                                    
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <section class="bg-white shadow" style="border-radius: 10px;">
+                                <div class="position-relative text-center">
+                                    <img class="block mb-2" src="./assets/culture___history_image_.png" width="100%" alt="">       
+                                    <section class="py-4 position-absolute w-100 text-left"  style="bottom: 20px; left: 20px;">
+                                        <h5 class="text-sm mb-0 font-weight-bold text-white">Handwooden Stories at Hidden Wood Basket Exhibitions</h5>
+                                        <div class="w-25 border-bottom py-1 border-2"></div>
+                                    </section>
+                                </div>                
+                                <div class="px-3 py-3 text-center">
+                                    <div class="row mx-0 mb-3">
+                                        <a class="col-md-6 px-0 text-left">
+                                            <span class="mdi mdi-script text-aqua"></span>
+                                            <i class="text-sm text-light-grey ml-1">27 April 2021</i>
+                                        </a>
+                                        <a class="col-md-6 px-0 text-left">
+                                            <span class="mdi mdi-tag-multiple text-aqua"></span>
+                                            <i class="text-sm text-light-grey ml-1">27 April 2021</i>
+                                        </a>
+                                    </div>
+                                    <p class="text-left text-sm line-height-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et similique corporis in pariatur veniam ea itaque omnis esse deserunt aliquam voluptatum ratione ipsa ipsum iusto, quasi delectus nostrum eaque dicta!</p>                                            
+                                    <a href="#" class="btn bg-orange text-white px-4 text-sm py-1">Read More</a>                                    
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <section class="bg-white shadow" style="border-radius: 10px;">
+                                <div class="position-relative text-center">
+                                    <img class="block mb-2" src="./assets/couples_honeymoon.png" width="100%" alt="">       
+                                    <section class="py-4 position-absolute w-100 text-left"  style="bottom: 20px; left: 20px;">
+                                        <h5 class="text-sm mb-0 font-weight-bold text-white">The Pakistan Hiking Heaves Few Pakistanis Know about</h5>
+                                        <div class="w-25 border-bottom py-1 border-2"></div>
+                                    </section>
+                                </div>                
+                                <div class="px-3 py-3 text-center">
+                                    <div class="row mx-0 mb-3">
+                                        <a class="col-md-6 px-0 text-left">
+                                            <span class="mdi mdi-script text-aqua"></span>
+                                            <i class="text-sm text-light-grey ml-1">27 April 2021</i>
+                                        </a>
+                                        <a class="col-md-6 px-0 text-left">
+                                            <span class="mdi mdi-tag-multiple text-aqua"></span>
+                                            <i class="text-sm text-light-grey ml-1">27 April 2021</i>
+                                        </a>
+                                    </div>
+                                    <p class="text-left text-sm line-height-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et similique corporis in pariatur veniam ea itaque omnis esse deserunt aliquam voluptatum ratione ipsa ipsum iusto, quasi delectus nostrum eaque dicta!</p>                                            
+                                    <a href="#" class="btn bg-orange text-white px-4 text-sm py-1">Read More</a>                                    
+                                </div>
+                            </section>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="w-100 my-4">
+                        <section class="bg-white shadow p-4 text-center bg-img bg-mail-list" style="border-radius: 10px;">
+                            <h5 class="text-green font-weight-bold text-aqua my-3">MAIL LIST</h5>
+                            <img src="./assets/namelines.png" width="160px" alt="" class="mb-4">   
+                            <p class="text-left text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero dicta voluptate nihil nam, </p>
+                            <form class="mb-3">
+                                <div class="input-group bg-light border-radius-5" style="border: 0.5px solid rgba(0, 0, 0, 0.125)">
+                                    <input type="text" class="form-control font-weight-bold py-2 text-sm text-white" placeholder="Enter your search here">
+                                </div>
+                            </form>                 
+                            <a href="#" class="btn bg-orange text-white px-5 text-sm py-2 font-weight-bold">SUBSCRIBE NOW!</a>                                    
+                                
+                        </section>
+                    </div>
+                    <div class="w-100 my-4">
+                        <section class="bg-white shadow p-4 text-center bg-img bg-mail-list" style="border-radius: 10px;">
+                            <h5 class="text-green font-weight-bold text-aqua my-3">CATEGORY</h5>
+                            <img src="./assets/namelines.png" width="160px" alt="" class="mb-4">   
+                            <p class="text-left text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero dicta voluptate nihil nam, </p>
+                            <a href="#" class="btn btn-block text-black text-sm border-bottom d-flex justify-content-between py-2 px-0 text-left font-weight-bold">
+                                <span>Funning Places</span>
+                                <span class="font-weight-normal text-light-grey">(02)</span>
+                            </a>                                    
+                            <a href="#" class="btn btn-block text-black text-sm border-bottom d-flex justify-content-between py-2 px-0 text-left font-weight-bold">
+                                <span>Funning Places</span>
+                                <span class="font-weight-normal text-light-grey">(02)</span>
+                            </a>                                    
+                            <a href="#" class="btn btn-block text-black text-sm border-bottom d-flex justify-content-between py-2 px-0 text-left font-weight-bold">
+                                <span>Hiking Adventure</span>
+                                <span class="font-weight-normal text-light-grey">(02)</span>
+                            </a>                                    
+                            <a href="#" class="btn btn-block text-black text-sm border-bottom d-flex justify-content-between py-2 px-0 text-left font-weight-bold">
+                                <span>Inside Trips</span>
+                                <span class="font-weight-normal text-light-grey">(02)</span>
+                            </a>                                    
+                            <a href="#" class="btn btn-block text-black text-sm border-bottom d-flex justify-content-between py-2 px-0 text-left font-weight-bold">
+                                <span>Hiking Adventures</span>
+                                <span class="font-weight-normal text-light-grey">(02)</span>
+                            </a>                                    
+                            <a href="#" class="btn btn-block text-black text-sm border-bottom d-flex justify-content-between py-2 px-0 text-left font-weight-bold">
+                                <span>Funning Places</span>
+                                <span class="font-weight-normal text-light-grey">(02)</span>
+                            </a>                                    
+                            <a href="#" class="btn btn-block text-black text-sm border-bottom d-flex justify-content-between py-2 px-0 text-left font-weight-bold">
+                                <span>People of KPK</span>
+                                <span class="font-weight-normal text-light-grey">(02)</span>
+                            </a>                                    
+                            <a href="#" class="btn btn-block text-black text-sm border-bottom d-flex justify-content-between py-2 px-0 text-left font-weight-bold">
+                                <span>Food Foodie</span>
+                                <span class="font-weight-normal text-light-grey">(02)</span>
+                            </a>                                    
+                            <a href="#" class="btn btn-block text-black text-sm border-bottom d-flex justify-content-between py-2 px-0 text-left font-weight-bold">
+                                <span>In the News</span>
+                                <span class="font-weight-normal text-light-grey">(02)</span>
+                            </a>                                    
+                                
+                        </section>
+                    </div>
+                    <div class="w-100 my-4" style="max-height: 500px; overflow: auto;">
+                        <section class="bg-white shadow p-4 text-center bg-img bg-mail-list" style="border-radius: 10px;">
+                            <h5 class="text-green font-weight-bold text-aqua my-3">TOP POSTS</h5>
+                            <img src="./assets/namelines.png" width="160px" alt="" class="mb-4">   
+                            <div class="d-flex border-bottom my-2 py-2">
+                                <div>
+                                    <img src="./assets/toppost_image1.png" alt="" width="60px">
+                                </div>
+                                <div class="text-left ml-3">
+                                    <a href="#" class="text-sm text-black font-weight-bold">Best Places to travel around pakistan Places to travel around pakistan in April 2021</a>
+                                </div>
+                            </div>
+                            <div class="d-flex border-bottom my-2 py-2">
+                                <div>
+                                    <img src="./assets/toppost_image2.png" alt="" width="60px">
+                                </div>
+                                <div class="text-left ml-3">
+                                    <a href="#" class="text-sm text-black font-weight-bold">Best Places to travel around pakistan Places to travel around pakistan in April 2021</a>
+                                </div>
+                            </div>
+                            <div class="d-flex border-bottom my-2 py-2">
+                                <div>
+                                    <img src="./assets/toppost_image3.png" alt="" width="60px">
+                                </div>
+                                <div class="text-left ml-3">
+                                    <a href="#" class="text-sm text-black font-weight-bold">Best Places to travel around pakistan Places to travel around pakistan in April 2021</a>
+                                </div>
+                            </div>
+                            <div class="d-flex border-bottom my-2 py-2">
+                                <div>
+                                    <img src="./assets/toppost_image1.png" alt="" width="60px">
+                                </div>
+                                <div class="text-left ml-3">
+                                    <a href="#" class="text-sm text-black font-weight-bold">Best Places to travel around pakistan Places to travel around pakistan in April 2021</a>
+                                </div>
+                            </div>                                
+                        </section>
+                    </div>
+                </div>
+            </div> 
+
+        </section>  
+
+        <section class="container-fluid px-0">
+            <img src="./assets/bottom_images_line.png" class="w-100" alt="">
+        </section>        
+    </div>
+
+    <br>
+    <br>
+
+
+
+
+
+
+
+
+
+
+    <a href="#" class="float">
+        <i class="mdi mdi-chat-processing-outline mdi-36px text-orange my-float"></i>
+    </a>
+    <footer class="position-relative bg-image bg-footer">
+        <div class="w-100 py-4">
+            <div class="container px-0 py-5">
+                <div class="row mx-0">
+                    <div class="col-md-3 mt-md-0 mt-4">
+                        <a href="" class="btn text-light-grey px-1"><img src="./assets/footer_logo.png" alt="" width="100%"></a>
+                        <div>
+                            <a href="" class="btn text-light-grey px-1"><img src="./assets/facebook_icon.png" alt="" width="30px"></a>
+                            <a href="" class="btn text-light-grey px-1"><img src="./assets/instagram_icon.png" alt="" width="30px"></a>
+                            <a href="" class="btn text-light-grey px-1"><img src="./assets/twitter_icon.png" alt="" width="30px"></a>
+                            <a href="" class="btn text-light-grey px-1"><img src="./assets/youtube_icon.png" alt="" width="30px"></a>                                
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-md-0 mt-4">
+                        <h5 class="text-white font-weight-bold green-left-border py-2 border-bottom border-2 mb-4">Quick Links</h5>
+                        <a href="/homepage.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Home</a>
+                        <a href="/why_aao_chalo.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Why aao Chalo</a>
+                        <a href="/destinations.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Destinations</a>
+                        <a href="/trekking_and_expeditions.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Trekking & Expeditions</a>
+                        <a href="/tour_and_trips.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Tours & Trips</a>
+                        <a href="/adventures.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Adventures</a>
+                    </div>
+                    <div class="col-md-3 mt-md-0 mt-4">
+                        <h5 class="text-white font-weight-bold green-left-border py-2 border-bottom border-2 mb-4">Other Links</h5>
+                        <a href="/travel_advisory_whethercondition.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Travel Advisory</a>
+                        <a href="/broucher.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Brouchers</a>
+                        <a href="/blogpage.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Blogs</a>
+                        <a href="/vlogs.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Vlog's</a>
+                        <a href="/tour_and_trips.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Tours & Trips</a>
+                        <a href="/image_gallery.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Media Gallery</a>
+                        <a href="/contactus.html" class="btn btn-block text-left text-white textg-sm py-0 my-3 font-weight-bold">Contact us</a>
+                    </div>
+
+                    <div class="col-md-3 mt-md-0 mt-4">
+                        <h5 class="text-white font-weight-bold green-left-border py-2 border-bottom border-2 mb-4">Other Links</h5>
+                        <p class="text-sm text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima unde</p>
+                        <form class="mb-0">
+                            <div class="input-group bg-white">
+                                <input type="text" class="form-control font-weight-bold text-white border-radius-0 border-0 py-0 tiny-text" placeholder="Enter your search here">
+                                <div class="input-group-append">
+                                    <span class="input-group-text bg-orange border-0 text-white" style="border-radius: 0px;">
+                                        <img src="./assets/search_icon.png" width="14px" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                        </form>                        
+                    </div>    
+                </div>
+                <div class="row mx-0 mt-4 hr pt-4">
+                    <div class="col-6 text-left">
+                        <p class="text-white">2021 Decimal Solutions. All rights reserved</p>
+                    </div>
+                    <div class="col-6 text-right text-white">
+                        <a href="/faq.html" class="text-white">FAQ</a>       
+                        <span class="mx-2">|</span>                 
+                        <a href="/support.html" class="text-white">Support</a>       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+</html>
