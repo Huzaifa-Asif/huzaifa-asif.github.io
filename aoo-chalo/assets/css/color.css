@@ -1,0 +1,53 @@
+.text-dark-blue { color:#005778 !important; }
+.bg-dark-blue { background-color: #005778 !important; }
+
+/* .text-aqua { color: #46a397 !important; }
+.bg-aqua { background-color: #46a397 !important; }
+.bg-aqua-opaque { background-color: rgba(70, 163, 151, 0.125) !important;} */
+
+.text-orange { color: #f77537 !important; }
+.bg-orange { background-color: #f77537 !important; }
+.border-orange { border: 1px solid #f77537 !important;}
+
+.text-light-grey { color: #848484 !important; }
+.bg-light-grey { background-color: #848484 !important; }
+
+.text-dark-grey { color: #515151 !important; }
+.bg-dark-grey { background-color: rgba(0, 0, 0, 0.85) !important; }
+
+.bg-light-2 { background-color: rgba(0, 0, 0, 0.075) !important;}
+
+.placeholder-white::placeholder { color: white !important;}
+.placeholder-light-grey::placeholder { color: #9e9d9d !important;}
+
+
+.bg-whatsapp { background-color: #08ac2c !important;}
+.border-green { border: 2px solid #08ac2c !important;}
+.bg-opaque {
+    background-color: rgba(255, 255, 255, 0.225) !important;
+}
+.wheather-table * {
+    border: none !important;
+    text-align: center !important;
+}
+.wheather-table {
+    border-collapse:separate; 
+    border-spacing: 0 0.25em;
+}
+
+.aqua-hover {
+    color: black !important;
+}
+.aqua-hover:hover {
+    color: #46a397 !important;
+}
+.text-aqua { color: #46a397 !important; }
+.bg-aqua { background-color: #46a397 !important; }
+.bg-aqua-opaque { background-color: rgba(70, 163, 151, 0.125) !important;}
+
+
+#accordionExample a:focus {
+    transition: 0.3s !important;
+    color: #46a397 !important;
+    font-weight: bold !important;
+}
